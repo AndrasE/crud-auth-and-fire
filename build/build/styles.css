@@ -1,0 +1,158 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding-top: 45px;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-bottom: 3%;
+}
+}
+
+/* navbar/profile-img/name/tags */
+.container-fluid {}
+
+.navbar {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  padding-right: 20px;
+  height: 70px !important;
+  padding-left: 10px !important;
+}
+
+.profile-name {
+  padding-top: 3px;
+  padding-right: 10px;
+  font-size: larger;
+}
+
+.profile-pic img {
+  height: 50px;
+  width: 50px;
+  border-radius: 70%;
+}
+
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #fff;
+}
+
+hr {
+  color: #fff !important;
+}
+
+/* divs for forms/inputs/button/svgs*/
+svg {
+  color: rgb(240, 236, 236)
+}
+
+.svg-sizing {
+  width: 1.3rem;
+  display: inline-block;
+  padding-right: 1px;
+  color: rgba(80, 80, 80, 0.671);
+}
+
+.facebook {
+  padding-left: 8px !important;
+}
+
+#inlineFormInputName {
+  background-color: #212529f3;
+  color: white;
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  margin-bottom: 6px;
+}
+
+.form-div {
+  margin: auto;
+  width: 550px !important;
+  background: #212529f3;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  margin-bottom: 35px;
+}
+
+.form-div button {
+  margin: auto;
+  float: right;
+}
+
+.update-div {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.update-div button {
+  display: inline-block;
+  margin: auto;
+  margin-left: 15px;
+}
+
+
+/* notes */
+.note {
+  background: #363b41;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 30px auto;
+
+  word-wrap: break-word;
+}
+
+.note button {
+
+  float: right;
+  margin-left: 15px;
+}
+
+p {
+  float: right;
+}
+
+.footer-container {
+  position: fixed;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 5px;
+  max-width: 400px !important;
+  border-width: thin;
+  border-top-style: solid;
+  border-color: #ccc;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-image:
+    radial-gradient(#363b41,
+      #353535);
+}
+
+
+/* media queries */
+@media only screen and (max-width: 600px) {
+  body {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  .form-div {
+    width: 95% !important;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .note {
+    width: 70%;
+  }
+}
