@@ -1,22 +1,21 @@
-body,
-html {
-  height: 100%;
-  margin: 0;
-  padding-top: 45px;
-  padding-left: 3%;
-  padding-right: 3%;
-  margin-bottom: 3%;
+
+body {
+	height: 100%;
+	margin: 0;
+  padding: 5%;
 }
+
+.asdasd{
+ display: flexbox !important;
 }
 
 /* navbar/profile-img/name/tags */
-.container-fluid {}
-
 .navbar {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  padding-left: 15px;
   padding-right: 20px;
   height: 70px !important;
-  padding-left: 10px !important;
+  display: inline-block;
 }
 
 .profile-name {
@@ -72,87 +71,74 @@ svg {
 }
 
 .form-div {
-  margin: auto;
-  width: 550px !important;
+  margin-top: 65px;
+  width: 450px;
   background: #212529f3;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
   padding: 10px;
-  margin-bottom: 35px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 65px;
+  z-index: 0;
+
 }
 
 .form-div button {
+  display: inline-block;
   margin: auto;
-  float: right;
 }
 
 .update-div {
-  margin-right: auto;
-  margin-left: auto;
+  position: absolute;
+  width: 500px;
+  height: 200px;
+  margin: 5% auto;
+  /* Will not center vertically and won't work in IE6/7. */
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
-
-.update-div button {
-  display: inline-block;
-  margin: auto;
-  margin-left: 15px;
-}
-
 
 /* notes */
 .note {
+  display: table-cell;
   background: #363b41;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
   padding: 10px;
   width: 240px;
-  margin: 30px auto;
-
+  margin: 24px;
+  float: left;
   word-wrap: break-word;
 }
 
 .note button {
-
-  float: right;
-  margin-left: 15px;
+  display: block;
+  margin: auto;
 }
 
 p {
   float: right;
 }
 
-.footer-container {
-  position: fixed;
+
+
+/* footer {
+  position: absolute;
   text-align: center;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  padding-top: 5px;
-  max-width: 400px !important;
-  border-width: thin;
-  border-top-style: solid;
-  border-color: #ccc;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  background-image:
-    radial-gradient(#363b41,
-      #353535);
+  bottom: -500px;
+  width: 100%;
+  height: 2.5rem;
 }
 
+footer p {
+  color: rgb(214, 201, 141);
+} */
 
-/* media queries */
-@media only screen and (max-width: 600px) {
-  body {
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-
-  .form-div {
-    width: 95% !important;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  .note {
-    width: 70%;
-  }
-}
+/* .popup-inner {
+  position: relative;
+  padding: 32px;
+  width: 100%;
+  max-width: 640px;
+  background-color: white;
+} */
