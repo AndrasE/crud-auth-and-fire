@@ -6,7 +6,7 @@ const ProtectedRoute = ({ children }) => {
 
   console.log("Checking user to redirect protected content..", user);
   if (user.isGuestUser === "Guest") {
-    return <Navigate to="/" />;
+    return <Navigate to="/home" />;
   }
   return children;
 };

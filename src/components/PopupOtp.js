@@ -1,12 +1,12 @@
 import React from "react";
 
 
-function Popup(props) {
+function PopupOtp(props) {
     return (props.trigger) ? (
-        <div className="form-div update-div ">
+        <div className="otp">
             {props.children}
         </div>
     ) : "";
 }
 
-export default Popup;
+export default PopupOtp;

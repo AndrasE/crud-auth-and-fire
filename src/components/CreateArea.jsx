@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Row, Col, Form, Button } from "react-bootstrap";
+import { Row, Col, Form, FormGroup, Button } from "react-bootstrap";
 
 
 function CreateArea(props) {
@@ -39,14 +39,14 @@ function CreateArea(props) {
 
 
   return (
-    <div className="form-div" >
+    <div className="form-div update-div" >
       <Form noValidate validated={validated} onSubmit={submitNote} >
 
         <Row >
           <Col >
             <h3>Add new notes</h3>
 
-            <Form.Group>
+            <FormGroup>
               <Form.Label hidden>Title</Form.Label>
               <Form.Control
                 required
@@ -61,13 +61,13 @@ function CreateArea(props) {
               <Form.Control.Feedback type="invalid">
                 Please add a title!
               </Form.Control.Feedback>
-            </Form.Group>
+            </FormGroup>
           </Col>
         </Row>
 
         <Row >
           <Col >
-            <Form.Group>
+            <FormGroup>
               <Form.Label hidden>Content</Form.Label>
               <Form.Control
                 required
@@ -83,7 +83,7 @@ function CreateArea(props) {
               <Form.Control.Feedback type="invalid">
                 Please add content!
               </Form.Control.Feedback>
-            </Form.Group>
+            </FormGroup>
           </Col>
         </Row>
         

@@ -33,10 +33,10 @@ const Home = () => {
   //less typing later, creating ref to firebase collection
   const usersCollectionRef = collection(db, "notes");
 
+  //timestamp
   const q = query(usersCollectionRef, orderBy("timestamp", "desc"));
 
   // date/time short with added zeros
-
   const date = new Date()
   const MyTimeString = date.toLocaleTimeString(navigator.language, {
     hour: "2-digit",
@@ -83,6 +83,7 @@ const Home = () => {
     await deleteDoc(doc(usersCollectionRef, id));
   };
 
+  //popup using props saving in a state to pass on to update note using org values as placeholder
   const popNote = async (id) => {
     const myDocRef = doc(db, "notes", id);
     const myDoc = await getDoc(myDocRef);
@@ -100,20 +101,29 @@ const Home = () => {
     }
   };
 
+  //cancel update popup
+  const cancelNoteUpdate = async (id) => {
+    console.log("Note update cancelled! ID:", id);
+    setButtonPopup(false);
+  }
+
   return (
-    <div style={{paddingBottom: "30px"}}>
+
+    <div style={{ paddingBottom: "30px" }}>
+
       <Header />
 
       <Container >
         <Row sm={12}>
           <CreateArea onAdd={createNote} />
-
+          {/* totally not necessary using PopUp after all but heyho here we go leave it her for the future projects*/}
           <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
-            <UpdateArea onUpdate={updateNote} oldTitle={note.title} oldContent={note.content} added={note.added} id={note.id} />
+            <UpdateArea onUpdate={updateNote} onCancel={cancelNoteUpdate} oldTitle={note.title} oldContent={note.content} added={note.added} id={note.id} />
           </Popup>
         </Row>
       </Container>
 
+      <hr />
 
       <Container fluid>
         <Row>
@@ -134,9 +144,8 @@ const Home = () => {
           })}
         </Row>
       </Container>
-      <Container className="footer-container">
+
       <Footer />
-      </Container>
 
     </div>
   );

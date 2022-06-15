@@ -23,6 +23,7 @@ function UpdateArea(props) {
     });
   }
 
+  
   function updateNote(event) {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
@@ -38,6 +39,11 @@ function UpdateArea(props) {
       setValidated(false);
       event.preventDefault();
     }
+  }
+
+  function cancelUpdate(event){
+    props.onCancel(props.id)
+    event.preventDefault();
   }
 
 
@@ -94,9 +100,10 @@ function UpdateArea(props) {
         
         <Row>
         <Col>
-            <Button variant="outline-secondary" type="submit">CANCEL</Button>{' '}
+        <Button variant="outline-secondary" type="submit">UPDATE</Button>{' '}
+            <Button variant="outline-secondary" onClick={cancelUpdate}>CANCEL</Button>{' '}
          
-            <Button variant="outline-secondary" type="submit">UPDATE</Button>{' '}
+      
           </Col>
           
         </Row>

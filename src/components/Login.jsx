@@ -1,15 +1,19 @@
-import React from "react";
-import { Col,  Row, Button } from "react-bootstrap";
+import React, { useState } from "react";
 import Header from "./Header";
-// import Footer from "./Footer";
+import Footer from "./Footer";
+import PhoneSignUp from "./PhoneSignUp";
 import { useNavigate } from "react-router-dom";
 import { useUserAuth } from "../context/UserAuthContext";
+import { Col,  Row, Button } from "react-bootstrap";
+
 
 const Login = () => {
 
-  const { googleSignIn, facebookSignIn } = useUserAuth();
   const navigate = useNavigate();
+  const { googleSignIn, facebookSignIn } = useUserAuth();
+  const [display, setDisplay] = useState(false)
 
+// functions from user auth (phone sign in fuctions are in a PhoneSignUp component)
   const handleGoogleSignIn = async (e) => {
     e.preventDefault();
     try {
@@ -30,14 +34,25 @@ const Login = () => {
     }
   };
 
+  function handleDisplay() {
+    setDisplay(true)
+    console.log("Login initalized with phone number");
+  }
+
+  const cancelDisplay = () => {
+    setDisplay(false)
+    console.log("Phone sign-in cancelled by user");
+  }
+
+
   return (
     <div>
-
-      <div>
+    
         <Header />
-      </div>
-
-      <div className="form-div" >
+     
+{/* login option buttons */}
+    { display === false ?
+      <div className="form-div login-div" >
         <Row >
           <Col>
             <h3>
@@ -63,7 +78,24 @@ const Login = () => {
               oogle
             </Button>{' '}
           </Col>
-        
+
+          <Col>
+
+            <Button onClick={handleDisplay} variant="outline-secondary" >
+              <div className="svg-sizing ">
+                <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="angle-double-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <g className="fa-group">
+                    <path fill="currentColor"
+                      d="m504.04209,472.92899l-46.8826,27.76818c-30.18034,18.64935 -158.79247,39.61365 -333.76554,-150.58206c-168.68184,-183.11268 -120.44797,-284.65773 -97.82214,-308.07515l38.93214,-36.30899c9.17917,-7.02382 23.02807,-6.19765 30.91882,2.28676l102.3913,108.67883l0.06285,0.05639c7.49166,7.96277 7.24655,20.35807 -2.60826,27.82458l0,0.08177l-45.37736,29.36694c-17.96239,15.97911 -2.30344,41.13064 16.05805,65.4278l87.31684,92.50798c40.61965,35.18112 62.87781,51.43374 82.31402,39.80821l37.73485,-37.76958c9.24202,-6.97024 23.02807,-6.11588 30.91882,2.31496l102.45415,108.67883l0,0.05639c7.45395,7.98815 7.17742,20.35807 -2.64596,27.87815z"
+                      className="fa-primary"></path>
+                  </g>
+                </svg>
+              </div>
+              Phone
+            </Button>{' '}
+
+          </Col>
+
           <Col>
             <Button className="facebook" onClick={handleFacebookSignIn} variant="outline-secondary" >
               <div className="svg-sizing ">
@@ -79,9 +111,18 @@ const Login = () => {
             </Button>{' '}
           </Col>
           </Row>
-        <>
-        </>
       </div>
+      :
+      null
+      }
+
+      { display === true ?
+      <PhoneSignUp onCancel={cancelDisplay} />
+      :
+      null
+      }
+      
+      <Footer />
 
     </div>
   );
