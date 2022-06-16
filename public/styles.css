@@ -51,6 +51,7 @@ svg {
 .svg-sizing {
   width: 1.3rem;
   display: block;
+  margin: auto;
   padding-right: 1px;
   color: rgba(80, 80, 80, 0.671);
 }
