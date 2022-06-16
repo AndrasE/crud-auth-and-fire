@@ -68,7 +68,7 @@ function PhoneSignUp(props) {
         <Form onSubmit={getOtp} >
           <Row>
             <Col>
-              <h6 className="mb-4">Phone authentication</h6>
+              <h5 className="mb-3">Phone authentication</h5>
               {error && <Alert variant="danger">{error}</Alert>}
               <Form.Group className="mb-3">
                 <PhoneInput
@@ -101,7 +101,7 @@ function PhoneSignUp(props) {
         <Form onSubmit={verifyOtp}>
           <Row>
             <Col>
-              <h6 className="mb-4">OTP Code</h6>
+              <h5 className="mb-3">OTP Code</h5>
               {error && <Alert variant="danger">{error}</Alert>}
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Control
