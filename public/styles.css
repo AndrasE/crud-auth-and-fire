@@ -50,13 +50,9 @@ svg {
 
 .svg-sizing {
   width: 1.3rem;
-  display: inline-block;
+  display: block;
   padding-right: 1px;
   color: rgba(80, 80, 80, 0.671);
-}
-
-.facebook {
-  padding-left: 8px !important;
 }
 
 
@@ -178,6 +174,6 @@ p {
 
 @media only screen and (max-width: 575px) {
   .note {
-    width: 70%;
+    width: 65%;
   }
 }
