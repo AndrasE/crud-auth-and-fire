@@ -75,7 +75,7 @@ const Login = () => {
                   </g>
                 </svg>
               </div>
-              oogle
+              google
             </Button>{' '}
           </Col>
 
@@ -91,7 +91,7 @@ const Login = () => {
                   </g>
                 </svg>
               </div>
-              Phone
+              phone
             </Button>{' '}
 
           </Col>
@@ -107,10 +107,11 @@ const Login = () => {
                   </g>
                 </svg>
               </div>
-              acebook
+              fabook
             </Button>{' '}
           </Col>
           </Row>
+         <br/>
       </div>
       :
       null
