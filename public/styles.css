@@ -168,13 +168,10 @@ p {
     width: 95% !important;
   }
 
-  .otp-div{ 
-    width: 70% !important;
-  }
 }
 
 @media only screen and (max-width: 575px) {
   .note {
-    width: 75%;
+    width: 85%;
   }
 }
