@@ -5,8 +5,8 @@ const ProtectedRoute = ({ children }) => {
   const { user } = useUserAuth();
 
   console.log("Checking user to redirect protected content..", user);
-  if (user.isGuestUser === "Guest") {
-    return <Navigate to="/home" />;
+  if (user.isGuestUser === true) {
+    return <Navigate to="/" />;
   }
   return children;
 };
