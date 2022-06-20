@@ -67,7 +67,7 @@ export function UserAuthContextProvider({ children }) {
   function displayPhoneSignInUser(phoneNumber) {
     console.log(phoneNumber);
     setUser({
-      name: phoneNumber,
+      name:  ("..." + phoneNumber.slice(phoneNumber.length - 5)),
       isGuestUser: false
     });
     localStorage.setItem("profilePic", phoneIcon);
