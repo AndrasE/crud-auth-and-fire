@@ -3,7 +3,7 @@ import { getAuth } from "firebase/auth"
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: `${process.env.REACT_APP_API_KEY}`,
+  apiKey: "AIzaSyDakBuesprwJu4AguOOXCjZ4TJoFHQ268A",
   authDomain: "crud-auth-and-fire.firebaseapp.com",
   projectId: "crud-auth-and-fire",
   storageBucket: "crud-auth-and-fire.appspot.com",
