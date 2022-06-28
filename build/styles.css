@@ -2,22 +2,33 @@ body,
 html {
   height: 100%;
   margin: 0;
-  padding-top: 45px;
+  padding-top: 50px;
   padding-left: 3%;
   padding-right: 3%;
-  margin-bottom: 3%;
 }
 
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3)
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+}
 
 /* navbar/profile-img/name/tags */
-.container-fluid {}
-
 .navbar {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-  padding-right: 20px;
+  padding-right: 15px;
   height: 70px !important;
   padding-left: 10px !important;
 }
+
+
+
 
 .profile-name {
   padding-top: 3px;
@@ -30,6 +41,22 @@ html {
   width: 50px;
   border-radius: 70%;
 }
+
+.dropdown-menu {
+  padding-left: 10px !important;
+  margin-top: 11px !important;
+  margin-left: 26px !important;
+  background-color:#212529f4 !important;
+ }
+ 
+ .dropdown-item {
+  color: #f0ecec !important;
+ }
+
+ .dropdown-item:hover {
+  background-color:#21252900 !important;
+  color: #fff !important;
+ }
 
 h3,
 h4,
@@ -45,25 +72,8 @@ hr {
 
 /* divs for forms/inputs/button/svgs*/
 svg {
-  color: rgb(240, 236, 236)
+  color: #f0ecec
 }
-
-.svg-sizing {
-  width: 1.3rem;
-  display: inline-block;
-  padding-right: 1px;
-  color: rgba(80, 80, 80, 0.671);
-}
-
-.facebook {
-  padding-left: 8px !important;
-}
-
-
-login-div {
-  width: 90%;
-}
-
 
 #inlineFormInputName {
   background-color: #212529f3;
@@ -75,6 +85,18 @@ login-div {
   font-size: 1.2em;
   font-family: inherit;
   margin-bottom: 6px;
+}
+
+.svg-sizing {
+  width: 1.3rem;
+  display: block;
+  margin: auto;
+  padding-right: 1px;
+  color: rgba(80, 80, 80, 0.671);
+}
+
+login-div {
+  width: 90%;
 }
 
 .form-div {
@@ -96,17 +118,6 @@ login-div {
   display: block;
   float: none;
 }
-/* 
-.update-div {
-  margin-right: auto;
-  margin-left: auto;
-} */
-
-.update-div button {
-  display: inline-block;
-  margin: auto;
-  margin-left: 15px;
-}
 
 .update-div button {
   display: inline-block;
@@ -127,12 +138,10 @@ login-div {
   padding: 10px;
   width: 240px;
   margin: 30px auto;
-
   word-wrap: break-word;
 }
 
 .note button {
-
   float: right;
   margin-left: 15px;
 }
@@ -170,14 +179,10 @@ p {
   .form-div {
     width: 95% !important;
   }
-
-  .otp-div{ 
-    width: 70% !important;
-  }
 }
 
 @media only screen and (max-width: 575px) {
   .note {
-    width: 70%;
+    width: 85%;
   }
 }

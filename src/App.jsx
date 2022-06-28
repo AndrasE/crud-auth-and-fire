@@ -10,20 +10,20 @@ import { UserAuthContextProvider } from "./context/UserAuthContext";
 function App() {
   return (
 
-           <UserAuthContextProvider>
-            <Routes>
-              <Route
-                path="/home"
-                element={
-                  <ProtectedRoute>
-                    <Home />
-                  </ProtectedRoute>
-                }
-              />
-              <Route path="/" element={<Login />} />
-              <Route path="/phonesignup" element={<PhoneSignUp/>} />
-            </Routes>
-          </UserAuthContextProvider>
+    <UserAuthContextProvider>
+      <Routes>
+        <Route
+          path="/home"
+          element={
+            <ProtectedRoute>
+              <Home />
+            </ProtectedRoute>
+          }
+        />
+        <Route path="/" element={<Login />} />
+        <Route path="/phonesignup" element={<PhoneSignUp />} />
+      </Routes>
+    </UserAuthContextProvider>
 
   );
 }
