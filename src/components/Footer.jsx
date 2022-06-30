@@ -14,7 +14,7 @@ function handleClick(e) {
   return (
     <div>
     <Container className="footer-container">
-      <a style={{textDecoration: "none"}}href="" onClick={handleClick}>Andras 🧡 {year}</a>
+      <a style={{textDecoration: "none"}} href="/#" onClick={handleClick}>Andras <span role="img" aria-label="heart">🧡</span>  {year}</a>
   
     </Container>
  </div>
