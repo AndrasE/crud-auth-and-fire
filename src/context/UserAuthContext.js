@@ -15,7 +15,7 @@ import phoneIcon from "../phoneIcon.png"
 
 const userAuthContext = createContext();
 
-const USER = { name: "Guest", isGuestUser: true }
+const USER = { name: "Guest", isGuestUser: true } //<switcher for localhost :)
 
 export function UserAuthContextProvider({ children }) {
   const [user, setUser] = useState(USER);

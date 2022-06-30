@@ -27,9 +27,6 @@ body::-webkit-scrollbar-thumb {
   padding-left: 10px !important;
 }
 
-
-
-
 .profile-name {
   padding-top: 3px;
   padding-right: 10px;
@@ -58,12 +55,13 @@ body::-webkit-scrollbar-thumb {
   color: #fff !important;
  }
 
+a,
 h3,
 h4,
 h5,
 h6,
 p {
-  color: #fff;
+  color: #fff !important;
 }
 
 hr {
@@ -125,6 +123,22 @@ login-div {
   margin-left: 15px;
 }
 
+.about-div {
+  margin: auto;
+  width: 570px;
+  background: #212529f3;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  margin-bottom: 35px;
+}
+
+.about-div p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
 .otp-div {
   margin-top: 2%;
   width: 350px!important;
@@ -146,7 +160,7 @@ login-div {
   margin-left: 15px;
 }
 
-p {
+.note p {
   float: right;
 }
 
@@ -156,7 +170,8 @@ p {
   left: 0;
   bottom: 0;
   right: 0;
-  padding-top: 5px;
+  padding-top: 3px;
+  padding-bottom: 1px;
   max-width: 400px !important;
   border-width: thin;
   border-top-style: solid;
@@ -177,6 +192,9 @@ p {
   }
 
   .form-div {
+    width: 95% !important;
+  }
+  .about-div {
     width: 95% !important;
   }
 }

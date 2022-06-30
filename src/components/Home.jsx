@@ -3,6 +3,7 @@ import UpdateArea from "./UpdateArea";
 import Popup from "./Popup";
 import Header from "./Header";
 import Footer from "./Footer";
+import About from "./About";
 import Note from "./Note";
 import CreateArea from "./CreateArea";
 import { db } from "../firebase-config";
@@ -29,6 +30,8 @@ const Home = () => {
   const [buttonPopup, setButtonPopup] = useState(false);
   //state for the clicked note passed to updateArea popUp
   const [note, setNote] = useState({});
+  //state for readering about page instead of home - login
+  const [footerClick, setFooterClick] = useState(false);
 
   //less typing later, creating ref to firebase collection
   const usersCollectionRef = collection(db, "notes");
@@ -107,12 +110,23 @@ const Home = () => {
     setButtonPopup(false);
   }
 
-  return (
+  //footer clicked - opens
+  function footerOpen() {
+  
+    setFooterClick(prevState => {
+      setFooterClick(!prevState)
+    })
+  }
 
+  return (
+   
     <div style={{ paddingBottom: "30px" }}>
 
       <Header />
 
+    
+      { footerClick === false ?
+      <div> 
       <Container >
         <Row sm={12}>
           <CreateArea onAdd={createNote} />
@@ -144,8 +158,13 @@ const Home = () => {
           })}
         </Row>
       </Container>
-
-      <Footer />
+      </div>
+      :
+      <About />
+      }
+      
+     
+      <Footer onClick={footerOpen}/>
 
     </div>
   );
