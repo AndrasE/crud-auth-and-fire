@@ -53,7 +53,6 @@ const Login = () => {
 
   //footer clicked - opens
   function footerOpen() {
-
     setFooterClick(prevState => {
       setFooterClick(!prevState)
     })

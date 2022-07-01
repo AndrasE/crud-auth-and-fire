@@ -112,7 +112,6 @@ const Home = () => {
 
   //footer clicked - opens
   function footerOpen() {
-  
     setFooterClick(prevState => {
       setFooterClick(!prevState)
     })
@@ -120,7 +119,7 @@ const Home = () => {
 
   return (
    
-    <div style={{ paddingBottom: "30px" }}>
+    <div style={{ paddingBottom: "20px" }}>
 
       <Header />
 

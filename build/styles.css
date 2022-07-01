@@ -41,8 +41,8 @@ body::-webkit-scrollbar-thumb {
 
 .dropdown-menu {
   padding-left: 10px !important;
-  margin-top: 11px !important;
-  margin-left: 26px !important;
+  padding-right: 10px !important;
+  margin-top: 11px !important;  
   background-color:#212529f4 !important;
  }
  
@@ -53,6 +53,10 @@ body::-webkit-scrollbar-thumb {
  .dropdown-item:hover {
   background-color:#21252900 !important;
   color: #fff !important;
+ }
+
+ .dropdown-details {
+  text-align: center !important;
  }
 
 a,

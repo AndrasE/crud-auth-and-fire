@@ -35,15 +35,22 @@ const Header = () => {
               &nbsp;&nbsp;R &nbsp;  U &nbsp; D
             </Navbar.Brand>
           </Nav>
-
+   
           {user.isGuestUser === false && (
             <Nav >
-              <NavItem className="profile-name border-left pl-2 ml-auto">
-                <NavDropdown title={user.name} id="collasible-nav-dropdown">
-                  <NavDropdown.Item onClick={handleLogout}>Logout</NavDropdown.Item>
+              <NavItem className="profile-name border-left">
+                <NavDropdown title={user.fname + user.phoneNuShort} id="collasible-nav-dropdown">
+                <div className="dropdown-details" >
+                <p>Logged in as</p>
+                <hr></hr>
+                <h6>{user.fname} {user.lname} {user.phoneNu} </h6>
+                <h6>at {user.time} via</h6>
+                <h6>{user.service}</h6>
+                <hr></hr>
+                </div>
+                  <NavDropdown.Item className="dropdown-details" onClick={handleLogout}>Logout</NavDropdown.Item>
                 </NavDropdown>
               </NavItem>
-
               <NavItem className="profile-pic border-left pl-2 ml-auto">
                 <img src={localStorage.getItem("profilePic")} alt="profile-pic" />
               </NavItem>

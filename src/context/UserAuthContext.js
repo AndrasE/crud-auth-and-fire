@@ -17,6 +17,13 @@ const userAuthContext = createContext();
 
 const USER = { name: "Guest", isGuestUser: true } //<switcher for localhost :)
 
+ // date/time short with added zeros
+ const date = new Date()
+ const MyTimeString = date.toLocaleTimeString(navigator.language, {
+   hour: "2-digit",
+   minute: "2-digit"
+ });
+
 export function UserAuthContextProvider({ children }) {
   const [user, setUser] = useState(USER);
 
@@ -26,7 +33,12 @@ export function UserAuthContextProvider({ children }) {
     return signInWithPopup(auth, googleAuthProvider)
       .then((result) => {
         setUser({
-          name: result.user.displayName.split(" ")[0],
+          fname: result.user.displayName.split(" ")[0],
+          lname: result.user.displayName.split(" ")[1],
+          phoneNuShort: "",
+          phoneNu: "",
+          service: "Google",
+          time: MyTimeString,
           isGuestUser: false
         });
         const profilePic = result.user.photoURL;
@@ -42,7 +54,12 @@ export function UserAuthContextProvider({ children }) {
     return signInWithPopup(auth, facebookAuthProvider)
       .then((result) => {
         setUser({
-          name: result.user.displayName.split(" ")[0],
+          fname: result.user.displayName.split(" ")[0],
+          lname: result.user.displayName.split(" ")[1],
+          phoneNuShort: "",
+          phoneNu: "",
+          service: "Facebook",
+          time: MyTimeString,
           isGuestUser: false
         });
         const profilePic = result.user.photoURL;
@@ -67,7 +84,11 @@ export function UserAuthContextProvider({ children }) {
   function displayPhoneSignInUser(phoneNumber) {
     console.log(phoneNumber);
     setUser({
-      name:  ("..." + phoneNumber.slice(phoneNumber.length - 5)),
+      fname: "",
+      phoneNuShort:  ("..." + phoneNumber.slice(phoneNumber.length - 6)),
+      phoneNu: phoneNumber,
+      service: "OTP",
+      time: MyTimeString,
       isGuestUser: false
     });
     localStorage.setItem("profilePic", phoneIcon);
