@@ -1,5 +1,4 @@
 import React from "react";
-import ReactEmbedGist from 'react-embed-gist';
 
 const About = () => {
 
@@ -48,9 +47,7 @@ const About = () => {
                 It tells React to do something after render. In my case check the database on firestore and load it into my app. After render useEffect calls onSnapshot on the firestore database, take a snapshot of the document injecting it in the app and listen for changes in the future.
                 Added a const called usersCollectionRef so later on I can refer to it rather than type it all out. It also makes the code more readable. Later on I had to add a query selector as I wanted to use the timestamps of the documents. I wanted to display all the notes in descending order. </p>
 
-                <ReactEmbedGist 
-                    gist="ritualjoint/c900607ae7700b25f510c43ba63b7a0b"
-                      />
+             
                     <br />
                 
             <strong id="frontCap">Frontend - capital letters matter! </strong>
