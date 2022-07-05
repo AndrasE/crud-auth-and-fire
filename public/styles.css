@@ -64,7 +64,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p, 
+strong{
   color: #fff !important;
 }
 
@@ -141,6 +142,12 @@ login-div {
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: justify;
+}
+
+
+
+.gist-meta a {
+  color: black!important
 }
 
 .otp-div {

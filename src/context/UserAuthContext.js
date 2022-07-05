@@ -85,8 +85,8 @@ export function UserAuthContextProvider({ children }) {
     console.log(phoneNumber);
     setUser({
       fname: "",
-      phoneNuShort:  (".." + phoneNumber.slice(phoneNumber.length - 5)),
-      phoneNu: phoneNumber,
+      phoneNuShort:  ("..." + phoneNumber.slice(phoneNumber.length - 4)),
+      phoneNu: ("0" + phoneNumber.slice(3, phoneNumber.length)),
       service: "OTP",
       time: MyTimeString,
       isGuestUser: false
