@@ -36,6 +36,7 @@ const About = () => {
 
             <a href="#useSnap">1. Backend - useEffect, onSnapshot </a> <br />
             <a href="#frontCap">2. Frontend - capital letters matter! </a> <br />
+            <a href="#props">3. Propeties - it`s drilling! </a> <br />
             <br />
             
             <strong id="useSnap">Backend - useEffect, onSnapshot </strong>
@@ -46,15 +47,34 @@ const About = () => {
                 Node install firebase, set up firebase console, create a config file and there you go pretty much ready to go. Obviously there was a bit of teething pain here and there but can't grumble.
                 The use of the useEffect hook was the only new thing here, which can be intimidating at first but it all makes sense. I actually watched a video on it, they might change the name as it can be confusing, as it's nothing to do with effect.
                 It tells React to do something after render. In my case check the database on firestore and load it into my app. After render useEffect calls onSnapshot on the firestore database, take a snapshot of the document injecting it in the app and listen for changes in the future.
-                Added a const called usersCollectionRef so later on I can refer to it rather than type it all out. It also makes the code more readable. Later on I had to add a query selector as I wanted to use the timestamps of the documents. I wanted to display all the notes in descending order. </p>
-
-                <Gist id='c900607ae7700b25f510c43ba63b7a0b' file='firebase' />,
-  
-             
-                    <br />
+                Added a const called usersCollectionRef so later on I can refer to it rather than type it all out. It also makes the code more readable. Later on I had to add a query selector as I wanted to use the timestamps of the documents. I wanted to display all the notes in descending order.</p>
+                <Gist id='c900607ae7700b25f510c43ba63b7a0b' file='firebase' /> <br />
                 
             <strong id="frontCap">Frontend - capital letters matter! </strong>
-            <p>Previously I used Heroku a few times, but it made me feel laggy. Especially with the first load time of the page. Once you try to access it it will load relatively quickly for a while, but this just annoyed me. I don`t mean no harm as it may not be Heroku`s issue. My backend is fixed to amazon`s AWS / N. Virginia server via mongoDB so the delay might be that db is overseas which would totally make sense. But hey-hey it`s free so I`m thankful! Anyhow I decided to try something new, Netlify! Pretty straight forward, but again of course I had to figure out a few things before a successful deployment.I think the biggest learning curve here is: ~/desktop/auth ≠ ~/Desktop/auth. Your app may look and run fine but by cd-ing in the root of your project call npm start you gotta make sure you use the correct casing! To make a build of the project its not necessarily going to be fine. Those warnings about casings running your app in localhost will matter once you are trying to deploy on Netlify.. Luckily the deployment messages are pretty straight forward, but the casing issue took me a while to figure out. Desktop is not desktop.. da </p>
+            <p>Previously I used Heroku a few times, but it made me feel laggy. Especially with the first load time of the page. 
+            Once you try to access it it will load relatively quickly for a while, but this just annoyed me. I don`t mean no harm 
+            as it may not be Heroku`s issue. My backend is fixed to amazon`s AWS / N. Virginia server via mongoDB so the delay 
+            might be that db is overseas which would totally make sense. But hey-hey it`s free so I`m thankful! Anyhow I decided 
+            to try something new, Netlify! Pretty straight forward, but again of course I had to figure out a few things before 
+            a successful deployment. I think the biggest learning curve here is: ~/desktop/auth ≠ ~/Desktop/auth. Your app may look 
+            and run fine by using the terminal and cd-ing in the root of your project calling npm start, but you gotta make sure 
+            you use the correct casing! To make a build of the project its not necessarily going to be fine. Those warnings about casings running your app in 
+            localhost will matter once you are trying to deploy on Netlify. Luckily the deployment messages are pretty straight 
+            forward, but the casing issue took me a while to figure out. Desktop is not desktop.. da </p>
+        
+            <strong id="props">Propeties - it`s drilling! </strong>
+            <p>If you new to React props are arguments passed into React components. If you have a look on this App the individual note components, 
+            they only been written once. It means that the App by using  propeties will allocate you the fields with the specified data you want. This reduces the amount of repeatition in the code. 
+            This is also one of the best feature of React! Just imagine if you go on any website that has some standardised look if
+            the person would need to write all the codes again and again and only need to change the content but not the code. This also the reason that
+            React is brilliant in this, let you to split the UI into indipendent and reusable pieces.  
+            </p>
+            <p>Propeties can be passed from parent to child elements (usually!). In this case App to the Note components. There is way to do backwards as well,
+            but its by calling a function in the parent element by the child. Now it can get confusing after some time. If you have and App
+            which has multi level components tracing what been passed where after a while can get real messy real quick. This called props-drilling. Passing propeties 
+            from parent to child to child to child and wait for the magic happen (if ever will). I will come back to this subject in a bit later on. 
+            This App as have more levels and more components but as a demonstration I simplyfied it to it`s core. As you can see, even the base of the App and its already getting a bit of a meh!  </p>
+            <img style={{width: "100%"}} src="demo.png" alt="demo"/>
         </div>
     );
 };
