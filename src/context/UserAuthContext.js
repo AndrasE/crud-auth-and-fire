@@ -15,7 +15,7 @@ import phoneIcon from "../phoneIcon.png"
 
 const userAuthContext = createContext();
 
-const USER = { name: "Guest", isGuestUser: true } //<switcher for localhost :)
+const USER = { name: "Guest", isGuestUser: true } 
 
  // date/time short with added zeros
  const date = new Date()
