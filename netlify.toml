@@ -1,5 +1,7 @@
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = false
+[build]
+  command = "npm run build"
+  publish = "build-output"
+
+ [[redirects]]
+  from = "https://some-url.com"
+  to = "https://some-other-url.com" 
