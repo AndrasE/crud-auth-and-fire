@@ -130,7 +130,7 @@ login-div {
 
 .about-div {
   margin: auto;
-  width: 570px;
+  width: 60%;
   background: #212529f3;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
@@ -144,10 +144,25 @@ login-div {
   text-align: justify;
 }
 
+.cat {
+  width: 150px;
+  display:block;
+  margin:auto; 
+  border-radius: 8px;
+}
 
+.demo {
+  display:block;
+  margin:auto; 
+  width: 98%;  
+  border-radius: 7px;
+}
 
-.gist-meta a {
-  color: black!important
+.ref{
+  text-align: center;
+}
+.ref a {
+  text-decoration: none;
 }
 
 .otp-div {
