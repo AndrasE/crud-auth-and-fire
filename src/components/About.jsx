@@ -22,6 +22,9 @@ const About = () => {
                 basically just one thing going to be rerendered on the webpage. The little heart fills in red, the thumb goes up, the taxi is coming your way on the map. Beautiful isn't it?<span role="img" aria-label="smiley">😊</span>
                 If you would like hear more about static/dynamic webpages <a href="https://www.youtube.com/watch?v=_wFJj94kSTU">click here</a>.</p>
             <p>If you would like read more about how this page was created, what hurdles I faced with <a href="https://www.youtube.com/watch?v=NhR88ZLCuFs&t=22s">click here</a>.</p>
+            <img className="cat" src="cat.gif" alt="cat"/>
+            <br />
+            <br />
 
 
 
@@ -33,10 +36,16 @@ const About = () => {
                 As I mentioned earlier the project started where my studies have finished. On Udemy we finished a basic React  App
                 as an end result of our lecture, but I wasn't completely satisfied. Mainly because it only covered the very basics of React and
                 what I found difficult to accept was that we never connected it to a backend and were able to host it anywhere. Here you can see the basic App and where it started from <a href="https://codesandbox.io/s/using-pre-built-react-components-completed-58bxk?fontsize=14&hidenavigation=1&theme=dark">click here</a>.</p>
-
+          
+            <div className="ref">
             <a href="#useSnap">1. Backend - useEffect, onSnapshot </a> <br />
             <a href="#frontCap">2. Frontend - capital letters matter! </a> <br />
             <a href="#props">3. Propeties - it`s drilling! </a> <br />
+            <a href="#update">4. Update - that pops! </a> <br />
+            <a href="#forms">5. Forms - validation </a> <br />
+            <a href="#env">6. Hiding keys - .env </a> <br />
+            <a href="#auth">7. Authentication - Context API & Protected Routes </a> <br />
+            </div>
             <br />
             
             <strong id="useSnap">Backend - useEffect, onSnapshot </strong>
@@ -45,7 +54,8 @@ const About = () => {
                 but as my main intention was to focus on React I ended up choosing Firebase/Firestore as i considered it more simple and also wanted to try something new.
                 The documentation of Firebase is pretty solid and there are many tutorials available on the internet. Connecting the app to it actually was relatively simple.
                 Node install firebase, set up firebase console, create a config file and there you go pretty much ready to go. Obviously there was a bit of teething pain here and there but can't grumble.
-                The use of the useEffect hook was the only new thing here, which can be intimidating at first but it all makes sense. I actually watched a video on it, they might change the name as it can be confusing, as it's nothing to do with effect.
+                The use of the useEffect hook was the only new thing here, which can be intimidating at first but it all makes sense. I actually watched a <a href="https://www.youtube.com/watch?v=HPoC-k7Rxwo&t=699s">video on it</a>, so 
+                the use might change a little in the near future, but the main takeaway here it's nothing to do with effect.
                 It tells React to do something after render. In my case check the database on firestore and load it into my app. After render useEffect calls onSnapshot on the firestore database, take a snapshot of the document injecting it in the app and listen for changes in the future.
                 Added a const called usersCollectionRef so later on I can refer to it rather than type it all out. It also makes the code more readable. Later on I had to add a query selector as I wanted to use the timestamps of the documents. I wanted to display all the notes in descending order.</p>
                 <Gist id='c900607ae7700b25f510c43ba63b7a0b' file='firebase' /> <br />
@@ -74,7 +84,89 @@ const About = () => {
             which has multi level components tracing what been passed where after a while can get real messy real quick. This called props-drilling. Passing propeties 
             from parent to child to child to child and wait for the magic happen (if ever will). I will come back to this subject in a bit later on. 
             This App as have more levels and more components but as a demonstration I simplyfied it to it`s core. As you can see, even the base of the App and its already getting a bit of a meh!  </p>
-            <img style={{width: "100%"}} src="demo.png" alt="demo"/>
+            <img className="demo" src="demo.png" alt="demo"/>
+            <p></p>
+
+            <strong id="update">Update - that pops!</strong> <br />
+            <p> I never thought about it much before the project, but as soon as I started writing I realized that updating 
+            a document requires a few extra steps compared to creating and deleting documents. We need to know what to update 
+            at which document. We also will need to display these steps. 
+            I watched a few videos online and I ended up finding <a href="https://youtu.be/i8fAO_zyFAM" >this video</a> which I 
+            liked and implemented. I wanted a PopUp screen with an Update component nested inside while the 
+            content around it would blur out. I tried a few variations but the look never really translated, always felt a bit 
+            odd, so I ended up ditching the idea. I left the PopUp in the code, but realistically it wasn`t really necessary 
+            after all. It is just a conditional rendering after all. If the button gets clicked don't display this, but display 
+            this. Funnily enough the "About" section you are reading right now works just the same way. You clicked, so the 
+            display state of most of the Home components is set to false, while the About component sets to true. Both present 
+            at the same time, but not all gets displayed. Looking back on the picture and props-drilling I mentioned above, the 
+            update function took me a while to figure out. I needed a Note component to send me back the ID of the note to the 
+            APP where it could search and find it in the database, saving it temporarily in a state, which gets passed as props 
+            to the Update component (hosted in a PopUp component) to render the old values as placeholders. When you fill out 
+            the fields with the new inputs, it gets sent back to the APP with the new values and the original ID of the document,
+             where it will call a function that will look up the document by the ID and update it to the new field. UseEffect 
+             will do its job and update what's changed. Although it is not as complicated as it looks, it's clear to see why I 
+             thought it worth mentioning props-drilling. Few more layers and components and it can get hard to follow. 
+            </p>
+
+            <strong id="forms">Forms - validation! </strong> 
+            <p>There are a number of forms on this page. Create/Update components and even the PhoneSignUp component as well. 
+            I wanted to implement a basic form validation so users won`t be able to create or update to empty or stupidly long 
+            notes. First I started to write it myself, if the value of this input element equals to nothing or this and that, 
+            set the state of the error message to "don`t be like this" and prevent it from being sent off while with conditional 
+            rendering via React Bootstrap the message gets displayed. It all works fine, but to make it more broad we need to 
+            set a lot of different error messages states. You could use a node package which helps after all we don't need to 
+            reinvent the wheel. And that's what I did with the PhoneSignUp component. 
+            Installed a packadge called <a href="https://www.npmjs.com/package/react-phone-number-input">react-phone-number-input</a>. 
+            It's a very versatile. Responsable checking the phone numbers, setting error messages and displaying flags 
+            with country-codes and pretty modular. The difference between controlled and uncontrolled forms are also 
+            worth checking out to make sure the correct use of forms otherwise as you might end up with errors in 
+            the console. <a href="https://stackoverflow.com/questions/42522515/what-are-react-controlled-components-and-uncontrolled-components">Here!</a>
+            </p>
+            <Gist id='09d4a1edb1eb3cb2964e0a4f193da9bc' file='update form validation' /> <br />
+            <Gist id='28f0060d66f224f8342d3e8cb9c632a4' file='phone-signup form validation' /> <br />
+
+            <strong id="env">Hiding keys - .env </strong> 
+            <p>To connect to the backend we need to use some private keys which just like a password we wouldn't 
+            like to air it out online. Previously I used a dotenv package, but React pretty much takes care of this without 
+            an external package. What happens you have a configuration file for firebase and instead of writing my password 
+            is 123XYZ you write the password is process.env.REACT_APP_MYPASSWORD and in a separate .env file you specify it 
+            REACT_APP_MYPASSWORD=123XYZ. When the APP is ready to be build and deployed your password won`t be included, 
+            therefore not accessible. On the frontend where you deployed it, you have to specify the .env parameters but it 
+            won't be included in the build and need a request to send by the user to use it in order to authenticate on the 
+            backend with Firebase. Although it is simple as it is, I had a good few hours spent on this as some reason my 
+            API keys returned undefined therefore no one could actually login to the APP until go fixed up. 
+            I tried many different things and I actually ended up recreating the problem in small to make it more 
+            understandable. What actually indeed fixed my 
+            problem is completely deleting the .env file, creating a new one. Although the contents got just copy/pasted into 
+            it should have worked originally I could not yet recreate this issue or find how it happened. I googled it many times,
+            tried to recreate it, but nada! I must have had a 
+            typo somewhere!! Anyways, <a href="https://codesandbox.io/s/env-working-46rofq">here is</a> a simple sandbox to 
+            understand how .env works. 
+            </p>
+
+            <strong id="auth">Authentication - Context API & Protected Routes </strong> 
+            <p> It`s a biiiig topic but will try to keep it short. I wanted to add auth to the project as without it I 
+            wouldn't feel it complete. In this App the content of the Home is protected at both ends. In the Firebase console
+             (backend) the rule is set out that if the user is not authenticated they can't read/update/delete using the Home component. 
+             That`s nice and all you can`t modify, but you still would be able to see all Create and Update components without 
+             the Notes. Although it's safe in the back, I actually wanted the user to be prevented from actually reaching the 
+             /Home route. This is why the App uses protected routes. As soon as you land on the Login page an object gets 
+             created. <br/>
+             const USER = &#123; name: "Guest", isGuestUser: true &#125; <br/>
+             Unless you login in and the object gets updated such as: <br/>
+             const USER = &#123; name: "Andras", isGuestUser: false &#125; <br/> Without this update as soon as you are trying to access the Home route you get redirected to the Login page. 
+             By using <a href="https://reactjs.org/docs/context.html">React Context API</a>  we can pass data through the component three without using properties (It`s not a drill!). 
+             I tried to combine a few files in this gist below to make it more clear, I hope it does.
+            </p>
+            <Gist id='a2bc7c52e466c038c51dfaac7d1ec3e8' file='auth-simplified' /> <br />
+          
+            <br />
+
+
+
+
+
+
         </div>
     );
 };

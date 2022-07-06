@@ -41,8 +41,8 @@ body::-webkit-scrollbar-thumb {
 
 .dropdown-menu {
   padding-left: 10px !important;
-  padding-right: 10px !important;
-  margin-top: 11px !important;  
+  margin-top: 11px !important;
+  margin-left: 26px !important;
   background-color:#212529f4 !important;
  }
  
@@ -55,17 +55,12 @@ body::-webkit-scrollbar-thumb {
   color: #fff !important;
  }
 
- .dropdown-details {
-  text-align: center !important;
- }
-
 a,
 h3,
 h4,
 h5,
 h6,
-p, 
-strong{
+p {
   color: #fff !important;
 }
 
@@ -142,12 +137,6 @@ login-div {
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: justify;
-}
-
-
-
-.gist-meta a {
-  color: black!important
 }
 
 .otp-div {
