@@ -11,8 +11,8 @@ const About = () => {
             <h6>Welcome to the "about" section!</h6>
             <br />
 
-            <p>I created this web-App after I finished a class on Udemy where we built a pretty basic React-App. 
-            I`m here to tell you that React is amazing! </p>
+            <p>I created this web-App after I finished a class on Udemy where we built a pretty basic React-App.
+                I`m here to tell you that React is amazing! </p>
             <p>It enables users to interact with the webpages/Apps. If you are old enough you must remember the
                 times where all the web-pages were static. I mean by static that every time you clicked a link/picture, it had to redirect you
                 to a new page for you to reach the content you are interested in. What React does is enable to write a webpage which renders
@@ -38,9 +38,9 @@ const About = () => {
                 as an end result of our lecture, but I wasn't completely satisfied. Mainly because it only covered the very basics of React and
                 what I found difficult to accept was that we never connected it to a backend and/or were able to host it anywhere. Here
                 you can see the basic App and where it started from <a href="https://codesandbox.io/s/using-pre-built-react-components-completed-58bxk?fontsize=14&hidenavigation=1&theme=dark">click here</a>.</p>
-
+            <br />
             <div className="ref">
-                <strong>Subject I will cover below: </strong>
+                <strong>Subject I will cover below: </strong> <br />
                 <a href="#useSnap">1. Backend - useEffect, onSnapshot </a> <br />
                 <a href="#frontCap">2. Frontend - capital letters matter </a> <br />
                 <a href="#props">3. Propeties - it`s drilling </a> <br />
@@ -71,22 +71,22 @@ const About = () => {
                 to try something new, Netlify! Pretty straight forward, but again of course I had to figure out a few things before
                 a successful deployment. I think the biggest learning curve here is: ~/desktop/auth ≠ ~/Desktop/auth. Your App may look
                 and run fine by using the terminal and cd-ing in the root of your project calling npm start, but you gotta make sure
-                you use the correct casing! To make a build of the project its not necessarily going to be fine. Those warnings about casings running your App in
+                you use the correct casing! To make a build of the project it's not necessarily going to be fine. Those warnings about casings running your App in
                 localhost will matter once you are trying to deploy on Netlify. Luckily the deployment messages are pretty straight
                 forward, but the casing issue took me a while to figure out. Desktop is not desktop.. da! </p>
 
             <strong id="props">Propeties - it`s drilling </strong>
             <p>If you new to React props are arguments passed into React components. If you have a look on this App the individual note components,
-                they only been written once. It means that the App by using  propeties will allocate you the fields with the specified data you want. This reduces the amount of repeatition in the code.
+                they only been written once. It means that the App by using  properties will allocate you the fields with the specified data you want. This reduces the amount of repeatition in the code.
                 This is also one of the best feature of React! Just imagine if you go on any website that has some standardised look if
                 the person would need to write all the codes again and again and only need to change the content but not the code. This also the reason that
-                React is brilliant in this, let you to split the UI into indipendent and reusable pieces.
+                React is brilliant in this, let you to split the UI into independent and reusable pieces.
             </p>
             <p>Propeties can be passed from parent to child elements (usually!). In this case App to the Note components. There is way to do backwards as well,
-                but its by calling a function in the parent element by the child. Now it can get confusing after some time. If you have and App
-                which has multi level components, tracing what been passed where after a while can get real messy real quick. This called props-drilling. Passing propeties
-                from parent to child to child to child and wait for the magic happen (if ever will). I will come back to this subject in a bit later on.
-                This App as have more levels and more components but as a demonstration I simplyfied it to it`s core. As you can see, even the base of the App and its already getting a bit of a meh!  </p>
+                but it's by calling a function in the parent element by the child. Now it can get confusing after some time. If you have and App
+                which has multi level components, tracing what has been passed where after a while can get real messy real quick. This is called props-drilling. Passing properties
+                from parent to child to child to child and wait for the magic to happen (if ever will). I will come back to this subject in a bit.
+                This App has more levels and more components but as a demonstration I simplified it to it`s core. As you can see, even the base of the App and it is already getting a bit of a meh!  </p>
             <img className="demo" src="demo.png" alt="demo" />
             <p></p>
 
@@ -107,7 +107,7 @@ const About = () => {
                 to the Update component (hosted in a PopUp component) to render the old values as placeholders. When you fill out
                 the fields with the new inputs, it gets sent back to the App with the new values and the original ID of the document,
                 where the App will call a function that will look up the document by the ID and update it to the new fields. UseEffect
-                will do its job and update what's changed. Although it is not as complicated as it looks and sounds, it's clear to see why I
+                will do it's  job and update what's changed. Although it is not as complicated as it looks and sounds, it's clear to see why I
                 thought it worth mentioning props-drilling. Few more layers and components and it can get hard to follow.
             </p>
 
@@ -116,11 +116,11 @@ const About = () => {
                 I wanted to implement a basic form validation so users won`t be able to create or update to empty or stupidly long
                 notes. First I started to write it myself, if the value of this input element equals to nothing or this and that,
                 set the state of the error message to "don`t be like this" and prevent it from being sent off while with conditional
-                rendering via React Bootstrap the error message gets displayed. It all works fine, but to make it more broad we need to
-                set a lot of different error messages states. You could use a node package which helps after all we don't need to
+                rendering via React Booftstrap the error message gets displayed. It all works fine, but to make it more broad we need to
+                set a lot of different error message states. You could use a node package which helps after all we don't need to
                 reinvent the wheel for this. And that's what I did with the PhoneSignUp component.
                 Installed a packadge called <a href="https://www.npmjs.com/package/react-phone-number-input">react-phone-number-input</a>.
-                It's a very versatile. Responsable checking the phone numbers, setting error messages and displaying flags
+                It's very versatile. Responsable checking the phone numbers, setting error messages and displaying flags
                 with country-codes and also pretty modular. The difference between controlled and uncontrolled forms are also
                 worth checking out to make sure the correct use of forms otherwise as you might end up with errors in
                 the console. <a href="https://stackoverflow.com/questions/42522515/what-are-react-controlled-components-and-uncontrolled-components">Here!</a>
@@ -137,11 +137,11 @@ const About = () => {
                 therefore not accessible. On the frontend where you deployed it, you have to specify the .env parameters but it
                 won't be included in the build and need a request to be sent by the user to use it in order to authenticate on the
                 backend with Firebase. Although it is simple as it is, I had a good few hours spent on this as some reason my
-                api keys returned undefined. Noone could actually login to the App until this got fixed up.
+                api keys returned undefined. Noone could actually log-in to the App until this got fixed up.
                 I tried many different things and I actually ended up recreating the problem in small to make it more
                 understandable. What actually indeed fixed my
-                problem is completely deleting the .env file, creating a new one. Although the contents just got copy/pasted into so theorically 
-                it should have worked as the original file bit it actually turned out to be the fix! I could not yet recreate this issue or find 
+                problem is completely deleting the .env file, creating a new one. Although the contents just got copy/pasted into so theoretically
+                it should have worked as the original file bit it actually turned out to be the fix! I could not yet recreate this issue or find
                 out how it happened. I googled it many times, tried to recreate it, but nada! I must have had a
                 typo somewhere!! Anyways, <a href="https://codesandbox.io/s/env-working-46rofq">here is</a> a simple sandbox to
                 understand how .env works.
@@ -158,7 +158,7 @@ const About = () => {
                 const USER = &#123; name: "Guest", isGuestUser: true &#125; <br />
                 If you login in the object gets updated to: <br />
                 const USER = &#123; name: "Andras", isGuestUser: false &#125; <br /> Without this update as soon as you are trying to access the Home
-                 route you get redirected to the Login page.
+                route you get redirected to the Login page.
                 By using <a href="https://reactjs.org/docs/context.html">React Context API</a>  we can pass data through the component three without using properties (It`s not a drill!).
                 I tried to combine a few files in this gist below to make it more clear, I hope it does.
             </p>
