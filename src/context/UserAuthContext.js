@@ -43,7 +43,6 @@ export function UserAuthContextProvider({ children }) {
         });
         const profilePic = result.user.photoURL;
         localStorage.setItem("profilePic", profilePic);
-
         console.log("Loggining as:", result.user.displayName.split(" ")[0]);
       })
   }

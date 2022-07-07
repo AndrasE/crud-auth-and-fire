@@ -18,7 +18,7 @@ const About = () => {
                 to a new page for you to reach the content you are interested in. What React does is enable to write a webpage which renders
                 conditionally according to the interaction with the user. We all use facebook or instagram. When you press like or comment we exactly do that; interact with the content and the App that serves it.
                 And does this with your control (and algorithm!). Facebook, Instagram, Netflix, Uber, Reddit they all use React.
-                Just imagine if they would work staticly. Every like, every click would have to reload the whole of the webpage for you (the code also need to change in the backend by something/someone). That would be very
+                Just imagine if they would work statically. Every like, every click would have to reload the whole of the webpage for you (the code also needs to be changed in the backend by something/someone). That would be very
                 annoying! Not to mention all data would get sent over back and forth for you to consume. Not a good idea. This is React! When you press a like button
                 basically just one thing going to be rerendered on the webpage. The little heart fills in red, the thumb goes up, the taxi is coming your way on the map. Beautiful isn't it?<span role="img" aria-label="smiley">😊</span>
                 If you would like hear more about static/dynamic webpages <a href="https://www.youtube.com/watch?v=_wFJj94kSTU">click here</a>.</p>
@@ -43,16 +43,18 @@ const About = () => {
                 <strong>Subject I will cover below: </strong> <br />
                 <a href="#useSnap">1. Backend - useEffect, onSnapshot </a> <br />
                 <a href="#frontCap">2. Frontend - capital letters matter </a> <br />
-                <a href="#props">3. Propeties - it`s drilling </a> <br />
+                <a href="#props">3. Properties - it`s drilling </a> <br />
                 <a href="#update">4. Update - that pops </a> <br />
                 <a href="#forms">5. Forms - validation </a> <br />
                 <a href="#env">6. Hiding keys - .env </a> <br />
                 <a href="#auth">7. Authentication - context api & protected routes </a> <br />
+                <a href="#otp">8. Authentication - recaptcha & otp </a> <br />
+                <a href="#nav">9. Navbar - with avatar </a> <br />
             </div>
             <br />
 
             <strong id="useSnap">Backend - useEffect, onSnapshot </strong>
-            <p>I watched a number of videos and trying to figure out what would be the best choice for this project as a backend.
+            <p>I watched a number of videos trying to figure out what would be the best choice for this project as a backend.
                 I previously used mongoDB, which is great as it gives you a lot of freedom setting up your own rules and what data it accepts and works with etc,
                 but as my main intention was to focus on React I ended up choosing Firebase/Firestore as I considered it more simple and also wanted to try something new.
                 The documentation of Firebase is pretty solid and there are many tutorials available on the internet. Connecting the App to it actually was relatively simple.
@@ -76,13 +78,13 @@ const About = () => {
                 forward, but the casing issue took me a while to figure out. Desktop is not desktop.. da! </p>
 
             <strong id="props">Propeties - it`s drilling </strong>
-            <p>If you new to React props are arguments passed into React components. If you have a look on this App the individual note components,
-                they only been written once. It means that the App by using  properties will allocate you the fields with the specified data you want. This reduces the amount of repeatition in the code.
-                This is also one of the best feature of React! Just imagine if you go on any website that has some standardised look if
-                the person would need to write all the codes again and again and only need to change the content but not the code. This also the reason that
+            <p>If you are new to React props are arguments passed into React components. If you have a look on this App the individual note components,
+                they have only been written once. It means that the App by using  properties will allocate you the fields with the specified data you want. This reduces the amount of repetition in the code.
+                This is also one of the best features of React! Just imagine if you go on any website that has some standardized look if
+                the person would need to write all the codes again and again and only need to change the content but not the code. This is also the reason that
                 React is brilliant in this, let you to split the UI into independent and reusable pieces.
             </p>
-            <p>Propeties can be passed from parent to child elements (usually!). In this case App to the Note components. There is way to do backwards as well,
+            <p>Properties can be passed from parent to child elements (usually!). In this case App to the Note components. There is way to do backwards as well,
                 but it's by calling a function in the parent element by the child. Now it can get confusing after some time. If you have and App
                 which has multi level components, tracing what has been passed where after a while can get real messy real quick. This is called props-drilling. Passing properties
                 from parent to child to child to child and wait for the magic to happen (if ever will). I will come back to this subject in a bit.
@@ -107,7 +109,7 @@ const About = () => {
                 to the Update component (hosted in a PopUp component) to render the old values as placeholders. When you fill out
                 the fields with the new inputs, it gets sent back to the App with the new values and the original ID of the document,
                 where the App will call a function that will look up the document by the ID and update it to the new fields. UseEffect
-                will do it's  job and update what's changed. Although it is not as complicated as it looks and sounds, it's clear to see why I
+                will do its  job and update what's changed. Although it is not as complicated as it looks and sounds, it's clear to see why I
                 thought it worth mentioning props-drilling. Few more layers and components and it can get hard to follow.
             </p>
 
@@ -116,7 +118,7 @@ const About = () => {
                 I wanted to implement a basic form validation so users won`t be able to create or update to empty or stupidly long
                 notes. First I started to write it myself, if the value of this input element equals to nothing or this and that,
                 set the state of the error message to "don`t be like this" and prevent it from being sent off while with conditional
-                rendering via React Booftstrap the error message gets displayed. It all works fine, but to make it more broad we need to
+                rendering via React Bootstrap the error message gets displayed. It all works fine, but to make it more broad we need to
                 set a lot of different error message states. You could use a node package which helps after all we don't need to
                 reinvent the wheel for this. And that's what I did with the PhoneSignUp component.
                 Installed a packadge called <a href="https://www.npmjs.com/package/react-phone-number-input">react-phone-number-input</a>.
@@ -139,7 +141,7 @@ const About = () => {
                 backend with Firebase. Although it is simple as it is, I had a good few hours spent on this as some reason my
                 api keys returned undefined. Noone could actually log-in to the App until this got fixed up.
                 I tried many different things and I actually ended up recreating the problem in small to make it more
-                understandable. What actually indeed fixed my
+                clear. What actually indeed fixed my
                 problem is completely deleting the .env file, creating a new one. Although the contents just got copy/pasted into so theoretically
                 it should have worked as the original file bit it actually turned out to be the fix! I could not yet recreate this issue or find
                 out how it happened. I googled it many times, tried to recreate it, but nada! I must have had a
@@ -163,6 +165,29 @@ const About = () => {
                 I tried to combine a few files in this gist below to make it more clear, I hope it does.
             </p>
             <Gist id='a2bc7c52e466c038c51dfaac7d1ec3e8' file='auth-simplified' /> <br />
+
+            <strong id="otp">Authentication - recaptcha & otp </strong>
+            <p>I saw in firebase console that it provides quite a few authentication methods including by phone. It right away intrigued me as I`ve` 
+            used facebook, google and email/password authentication before, but never with phone. The search has begun, watched a number of tutorials and 
+            found this awesome fella. It took me for a while to make it happen, but I did! I was so happy, once I received an OTP (one time password) on my 
+            phone. I mean it`s not rocket-science, but at the same time it was a bit difficult for me to set it up correctly as if the recaptcha was not working 
+            properly it just won`t work. It makes sense though! It needs to prevent attacks and eliminate the not real users. Without, a bot could
+             make firebase send x-amount of texts for "fun" random numbers and charge a fee to the administrator. 
+             Anyhow here is <a href="https://firebase.google.com/docs/auth/web/phone-auth?authuser=0&hl=en">the documentation </a> for it.
+            </p>
+
+            <strong id="nav">Navbar - with avatar </strong>
+            <p> I wanted to create a Navbar that indicates if the user logged or not and also displays some details about the user.
+                I found <a href="https://youtu.be/vDT7EnUpEoo">this video </a> really helpful. All the sign-in methods are populated in the context file and get
+                exported to wherever it`s needed them. During the sign-in I can capture a few details from the user in an object. I wanted the name
+                and the profile-pics to be included in the Navbar. Once they are captured, they get imported in the Header component where it gets used
+                to display them to the user. Here is a gist to make it easier to understand.
+            </p>
+            <Gist id='1c0f100a90ed8086f1ccdf80bdfefa4' file='avatar' /> <br />
+
+
+
+
 
             <br />
 
