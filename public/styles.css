@@ -158,11 +158,23 @@ login-div {
   border-radius: 7px;
 }
 
+.read{
+  display:block;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 .ref{
   text-align: center;
 }
 .ref a {
   text-decoration: none;
+}
+
+.ref hr {
+  width: 30%;
+  margin: auto;
 }
 
 .otp-div {
