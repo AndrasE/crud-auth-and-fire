@@ -173,21 +173,19 @@ const About = () => {
             phone. I mean it`s not rocket-science, but at the same time it was a bit difficult for me to set it up correctly as if the recaptcha was not working 
             properly it just won`t work. It makes sense though! It needs to prevent attacks and eliminate the not real users. Without, a bot could
              make firebase send x-amount of texts for "fun" random numbers and charge a fee to the administrator. 
-             Anyhow here is <a href="https://firebase.google.com/docs/auth/web/phone-auth?authuser=0&hl=en">the documentation </a> for it.
+             Anyhow here is <a href="https://firebase.google.com/docs/auth/web/phone-auth?authuser=0&hl=en">the documentation</a> for it.
             </p>
 
             <strong id="nav">Navbar - with avatar </strong>
             <p> I wanted to create a Navbar that indicates if the user logged or not and also displays some details about the user.
-                I found <a href="https://youtu.be/vDT7EnUpEoo">this video </a> really helpful. All the sign-in methods are populated in the context file and get
+                I found <a href="https://youtu.be/vDT7EnUpEoo">this video</a> really helpful. All the sign-in methods are populated in the context file and get
                 exported to wherever it`s needed them. During the sign-in I can capture a few details from the user in an object. I wanted the name
                 and the profile-pics to be included in the Navbar. Once they are captured, they get imported in the Header component where it gets used
                 to display them to the user. Here is a gist to make it easier to understand.
             </p>
-            <Gist id='1c0f100a90ed8086f1ccdf80bdfefa4' file='avatar' /> <br />
-
-
-
-
+            <Gist id='61c0f100a90ed8086f1ccdf80bdfefa4' file='avatar' />
+           
+             <br />
 
             <br />
 
