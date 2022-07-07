@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div className="about-div">
 
-            <h4>Hi there<span role="img" aria-label="wave">👋</span></h4>
+            <h4>Hi there<span role="img" aria-label="wave"> 👋</span></h4>
 
             <h6>Welcome to the "about" section!</h6>
             <br />
@@ -29,7 +29,7 @@ const About = () => {
 
 
 
-            <h4>Welcome to the dark side dear visitor!<span role="img" aria-label="dark">🦇</span></h4>
+            <h4>Welcome to the dark side dear visitor!<span role="img" aria-label="dark"> 🦇</span></h4>
             <p>Just like I have done it in the past I do like to write down in-depth what challenges I needed to overcome to build this App.
                 I think this is a good way to learn and also to keep track of my progress. Even if I face an issue in the future I know that
                 I have done it or similar before and even if I don`t remember the solution right away I have something to reference from my
@@ -40,6 +40,7 @@ const About = () => {
                 you can see the basic App and where it started from <a href="https://codesandbox.io/s/using-pre-built-react-components-completed-58bxk?fontsize=14&hidenavigation=1&theme=dark">click here</a>.</p>
 
             <div className="ref">
+                <strong>Subject I will cover below: </strong>
                 <a href="#useSnap">1. Backend - useEffect, onSnapshot </a> <br />
                 <a href="#frontCap">2. Frontend - capital letters matter </a> <br />
                 <a href="#props">3. Propeties - it`s drilling </a> <br />
@@ -153,9 +154,9 @@ const About = () => {
                 That`s nice and all you can`t modify, but you still would be able to see all Create and Update components without
                 the Notes. Although it's safe in the back I wanted the user to be prevented from actually reaching the
                 /Home route. This is why the App uses protected routes. As soon as you land on the Login page an object gets
-                created. <br />
+                created as such: <br />
                 const USER = &#123; name: "Guest", isGuestUser: true &#125; <br />
-                If you login in the object gets updated such as: <br />
+                If you login in the object gets updated to: <br />
                 const USER = &#123; name: "Andras", isGuestUser: false &#125; <br /> Without this update as soon as you are trying to access the Home
                  route you get redirected to the Login page.
                 By using <a href="https://reactjs.org/docs/context.html">React Context API</a>  we can pass data through the component three without using properties (It`s not a drill!).
