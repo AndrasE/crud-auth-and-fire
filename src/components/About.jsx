@@ -40,7 +40,7 @@ const About = () => {
                 you can see the basic App and where it started from <a href="https://codesandbox.io/s/using-pre-built-react-components-completed-58bxk?fontsize=14&hidenavigation=1&theme=dark">click here</a>.</p>
             <br />
             <div className="ref">
-                <strong>Subject I will cover below: </strong> <br />
+                <strong>subjects covered </strong> <hr/> <br />
                 <a href="#useSnap">1. Backend - useEffect, onSnapshot </a> <br />
                 <a href="#frontCap">2. Frontend - capital letters matter </a> <br />
                 <a href="#props">3. Properties - it`s drilling </a> <br />
@@ -50,6 +50,7 @@ const About = () => {
                 <a href="#auth">7. Authentication - context api & protected routes </a> <br />
                 <a href="#otp">8. Authentication - recaptcha & otp </a> <br />
                 <a href="#nav">9. Navbar - with avatar </a> <br />
+                <a href="#epi">X. Epilogue - byee </a> <br />
             </div>
             <br />
 
@@ -185,11 +186,11 @@ const About = () => {
             </p>
             <Gist id='61c0f100a90ed8086f1ccdf80bdfefa4' file='avatar' />
            
+            <strong id="epi">Epilogue - byee </strong>
+            <p>
+
+            </p>
              <br />
-
-            <br />
-
-
         </div>
     );
 };
