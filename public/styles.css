@@ -146,6 +146,10 @@ login-div {
   text-align: justify;
 }
 
+.about-div a{
+  font-weight: 500;
+}
+
 .cat {
   width: 150px;
   display:block;

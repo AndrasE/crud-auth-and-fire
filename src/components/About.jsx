@@ -26,7 +26,7 @@ const About = () => {
                 annoying! Not to mention all data would get sent over back and forth for you to consume. Not a good idea. This is React! When you press a like button
                 basically just one thing going to be rerendered on the webpage. The little heart fills in red, the thumb goes up, the taxi is coming your way on the map. Beautiful isn't it? :) 
                 If you would like hear more about static/dynamic webpages <a href="https://www.youtube.com/watch?v=_wFJj94kSTU">click here</a>.</p>
-            <p>If you would like read more about how this page was created, what hurdles I faced with click on "read more".<span role="img" aria-label="down"> ➡</span></p>
+            <p>If you would like read more about how this page was created, what hurdles I faced with click on "read more".<span role="img" aria-label="ok">👀</span></p>
             <img className="cat" src="cat.gif" alt="cat" />        <br />
             <a href="#welcome" className="read" onClick={() => setDisplay(true) }>- - read more - -</a>
            
@@ -91,10 +91,10 @@ const About = () => {
                         the person would need to write all the codes again and again and only need to change the content but not the code. This is also the reason that
                         React is brilliant in this, let you to split the UI into independent and reusable pieces.
                     </p>
-                    <p>Properties can be passed from parent to child elements (usually!). In this case App to the Note components. There is way to do backwards as well,
+                    <p>Properties can be passed from parent to child elements &#40;usually!&#41;. In this case App to the Note components. There is way to do backwards as well,
                         but it's by calling a function in the parent element by the child. Now it can get confusing after some time. If you have and App
                         which has multi level components, tracing what has been passed where after a while can get real messy real quick. This is called props-drilling. Passing properties
-                        from parent to child to child to child and wait for the magic to happen (if ever will). I will come back to this subject in a bit.
+                        from parent to child to child to child and wait for the magic to happen &#40;if ever will&#41;. I will come back to this subject in a bit.
                         This App has more levels and more components but as a demonstration I simplified it to it`s core. As you can see, even the base of the App and it is already getting a bit of a meh!  </p>
                     <img className="demo" src="demo.png" alt="demo" />
                     <p></p>
@@ -113,7 +113,7 @@ const About = () => {
                         at the same time, but not all gets displayed. Looking back on the picture and props-drilling I mentioned above, the
                         update function took me a while to figure out. I needed a Note component to send me back the ID of the note to the
                         App where it could search and find it in the database, saving it temporarily in a state, which gets passed as props
-                        to the Update component (hosted in a PopUp component) to render the old values as placeholders. When you fill out
+                        to the Update component &#40;hosted in a PopUp component&#41; to render the old values as placeholders. When you fill out
                         the fields with the new inputs, it gets sent back to the App with the new values and the original ID of the document,
                         where the App will call a function that will look up the document by the ID and update it to the new fields. UseEffect
                         will do its  job and update what's changed. Although it is not as complicated as it looks and sounds, it's clear to see why I
@@ -193,10 +193,34 @@ const About = () => {
                     <Gist id='61c0f100a90ed8086f1ccdf80bdfefa4' file='avatar' />
 
                     <strong id="epi">Epilogue - byee </strong>
-                    <p>
-
-                    </p>
-                    <br />
+                    <p>This is my farewell to this project. I will miss you! It did take me a while, done a lot of research 
+                    and trial and error, but I have arrived where I wanted to arrive. It is not flawless, not at all! Even today 
+                    I made changes on it, but it does look good and functional!  </p>
+                    
+                    <p> I used react-bootsrap for styling the page and it
+                     did take me a while to get used to it. If you inspect the page thoroughly you might find interesting and 
+                     also stupid solutions. First I simply just wanted to create a flex-box and grid system but it became quite a 
+                     hussle after some time, as there are no functional &#60;Containers&#62; in react-bootsrap. Ended up using &#60;divs&#62; 
+                     with &#60;Row&#62; and &#60;Col&#62; with classes. It does the job very well, but I`m also certain there are better 
+                     solutions to this. My main focus was functionality to be fair and that checks out.  </p>
+                     <p> I haven't &#40;yet&#41; 
+                     implemented a number of things which I will miss not doing, but I`m planning to move on to the next project. 
+                     Although it's React App and we stay on the same page, I think the project would benefit from management of 
+                     the user sessions. I mean here, if you log in and refresh the page you immediately get logged out. It`s not 
+                     a biggie as you don't need to redirect to interact with the App, but it would be a nice touch. I also do 
+                     think the next big step for this App would be if the users could only update and or delete their own notes. 
+                     But the main purpose of this App was to be a simple CRUD App and I ended up way further than I 
+                     anticipated/intended. There is always more that could be done and it`s really hard for me to stop once I`m 
+                     in the zone. Let`s do this, but it would be nice if..  </p>
+                     <p> And <a href="https://www.dropbox.com/s/ub0h8s53yms7wsh/comp-tree.png?dl=0">that is</a> where we are now! It`s CRUD, but Auth too 
+                     with quite a few extra twists. I think this is the right time to stop and move on to the next one. Dear App,
+                      thank you for teaching me! Dear Visitor if you are still with me, thank you for coming and I hope I can see
+                       you shortly on my next project! 
+                    </p> 
+                    <a href="#" className="read" onClick={() => setDisplay(false) }>- - la fin - -</a>
+                    <br/>
+                    <img className="cat" src="cat2.gif" alt="cat" />        
+                    <br/>
                 </div>
                 :
                 null
