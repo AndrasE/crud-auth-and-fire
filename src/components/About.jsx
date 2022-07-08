@@ -217,7 +217,7 @@ const About = () => {
                       thank you for teaching me! Dear Visitor if you are still with me, thank you for coming and I hope I can see
                        you shortly on my next project! 
                     </p> 
-                    <a href="#" className="read" onClick={() => setDisplay(false) }>- - la fin - -</a>
+                    <a href="/" className="read" onClick={() => setDisplay(false) }>- - la fin - -</a>
                     <br/>
                     <img className="cat" src="cat2.gif" alt="cat" />        
                     <br/>
