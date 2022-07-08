@@ -99,7 +99,12 @@ const Home = () => {
       });
       console.log("Note`s data:", myDoc.data());
       setButtonPopup(true);
+
+      if (window.innerWidth < 1220) {
+        window.scrollTo(0, 285)
+    } else {
       window.scrollTo(0, 0)
+    }
     } else {
       console.log("Error: Note doesn`t exist!");
     }
