@@ -99,7 +99,6 @@ const Home = () => {
       });
       console.log("Note`s data:", myDoc.data());
       setButtonPopup(true);
-
       if (window.innerWidth < 1220) {
         window.scrollTo(0, 285)
     } else {
@@ -114,7 +113,10 @@ const Home = () => {
   const cancelNoteUpdate = async (id) => {
     console.log("Note update cancelled! ID:", id);
     setButtonPopup(false);
+        if (window.innerWidth < 1220) {
+        window.scrollTo(0, 320)
   }
+}
 
   //footer clicked - opens
   function footerOpen() {
