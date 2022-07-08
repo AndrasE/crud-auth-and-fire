@@ -27,7 +27,7 @@ const About = () => {
                 basically just one thing going to be rerendered on the webpage. The little heart fills in red, the thumb goes up, the taxi is coming your way on the map. Beautiful isn't it? :) 
                 If you would like hear more about static/dynamic webpages <a href="https://www.youtube.com/watch?v=_wFJj94kSTU">click here</a>.</p>
             <p>If you would like read more about how this page was created, what hurdles I faced with click on "read more".<span role="img" aria-label="down"> ➡</span></p>
-            <img  id="welcome" className="cat" src="cat.gif" alt="cat" />        <br />
+            <img className="cat" src="cat.gif" alt="cat" />        <br />
             <a href="#welcome" className="read" onClick={() => setDisplay(true) }>- - read more - -</a>
            
            
@@ -35,7 +35,7 @@ const About = () => {
                 
                 <div>
                 <br />
-                    <h4>Welcome to the dark side dear visitor!<span role="img" aria-label="dark"> 🦇</span></h4>
+                    <h4 id="welcome">Welcome to the dark side dear visitor!<span role="img" aria-label="dark"> 🦇</span></h4>
                     <p>Just like I have done it in the past I do like to write down in-depth what challenges I needed to overcome to build this App.
                         I think this is a good way to learn and also to keep track of my progress. Even if I face an issue in the future I know that
                         I have done it or similar before and even if I don`t remember the solution right away I have something to reference from my

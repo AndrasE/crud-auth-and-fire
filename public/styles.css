@@ -5,6 +5,8 @@ html {
   padding-top: 50px;
   padding-left: 3%;
   padding-right: 3%;
+  scroll-padding-top: 75px;
+  scroll-behavior:smooth !important;
 }
 
 body::-webkit-scrollbar {
