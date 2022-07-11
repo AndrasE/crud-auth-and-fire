@@ -144,7 +144,7 @@ const Home = () => {
         </Row>
       </Container>
 
-      <hr />
+      <hr style={{margin: "3px"}}/>
 
       <Container fluid>
         <Row>

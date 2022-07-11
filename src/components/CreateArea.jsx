@@ -44,7 +44,7 @@ function CreateArea(props) {
 
         <Row >
           <Col >
-            <h3>Add new notes</h3>
+            <h3>Create note</h3>
 
             <FormGroup>
               <Form.Label hidden>Title</Form.Label>
@@ -56,7 +56,7 @@ function CreateArea(props) {
                 name="title"
                 value={note.title}
                 onChange={handleChange}
-                maxLength="15"
+                maxLength="30"
               />
               <Form.Control.Feedback type="invalid">
                 Please add a title!
@@ -78,7 +78,7 @@ function CreateArea(props) {
                 value={note.content}
                 onChange={handleChange}
                 rows="3"
-                maxLength="50"
+                maxLength="60"
               />
               <Form.Control.Feedback type="invalid">
                 Please add content!

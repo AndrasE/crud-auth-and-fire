@@ -55,7 +55,7 @@ function UpdateArea(props) {
 
         <Row>
           <Col>
-            <h3>Update note!</h3>
+            <h3>Update note</h3>
 
             <Form.Group>
               <Form.Label hidden>Title</Form.Label>
@@ -63,11 +63,11 @@ function UpdateArea(props) {
                 required
                 type="text"
                 id="inlineFormInputName"
-                placeholder={props.oldTitle}
+                placeholder={props.oldTitle} 
                 name="title"
                 value={note.title}
                 onChange={handleChange}
-                maxLength="15"
+                maxLength="30"
               />
               <Form.Control.Feedback type="invalid">
                 Please add a title!
@@ -89,7 +89,7 @@ function UpdateArea(props) {
                 value={note.content}
                 onChange={handleChange}
                 rows="3"
-                maxLength="50"
+                maxLength="60"
               />
               <Form.Control.Feedback type="invalid">
                 Please add content!
@@ -102,10 +102,7 @@ function UpdateArea(props) {
         <Col>
         <Button variant="outline-secondary" type="submit">UPDATE</Button>{' '}
             <Button variant="outline-secondary" onClick={cancelUpdate}>CANCEL</Button>{' '}
-         
-      
           </Col>
-          
         </Row>
         <>
 
