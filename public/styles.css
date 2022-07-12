@@ -210,10 +210,9 @@ login-div {
 
 .footer-container {
   @-moz-document url-prefix() {
-    .header__item {
       position: sticky;
-    }
   }
+  
   position: fixed;
   text-align: center;
   z-index:1;
