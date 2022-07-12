@@ -226,8 +226,6 @@ login-div {
   background-image:
     radial-gradient(#363b41,
       #353535);
-      width: 100%;
-      height: 100%;
       overflow-y: auto;
      -webkit-overflow-scrolling: touch;
 }
