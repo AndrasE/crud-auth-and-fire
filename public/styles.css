@@ -209,10 +209,6 @@ login-div {
 }
 
 .footer-container {
-  @-moz-document url-prefix() {
-      position: sticky;
-  }
-  
   position: fixed;
   text-align: center;
   z-index:1;
@@ -222,6 +218,7 @@ login-div {
   padding-top: 3px;
   padding-bottom: 1px;
   max-width: 400px !important;
+  min-width:200px !important;
   border-width: thin;
   border-top-style: solid;
   border-color: #ccc;
