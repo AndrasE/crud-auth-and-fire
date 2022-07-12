@@ -13,10 +13,9 @@ function handleClick(e) {
   const year = new Date().getFullYear();
   return (
     
-    <Container className="footer-container">
+    <div className="footer-container">
       <a style={{textDecoration: "none"}} href="/#" onClick={handleClick}>Andras <span role="img" aria-label="heart">🧡</span>  {year}</a>
-  
-    </Container>
+    </div>
  
   );
 }
