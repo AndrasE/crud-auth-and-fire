@@ -5,10 +5,7 @@ import { Container } from "react-bootstrap";
 
 function Footer(props) {
 
-function handleClick(e) {
-  e.preventDefault();
-  props.onClick();
-}
+
 
   const year = new Date().getFullYear();
   return (
