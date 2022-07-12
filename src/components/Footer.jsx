@@ -12,12 +12,12 @@ function handleClick(e) {
 
   const year = new Date().getFullYear();
   return (
-    <div>
+    
     <Container className="footer-container">
       <a style={{textDecoration: "none"}} href="/#" onClick={handleClick}>Andras <span role="img" aria-label="heart">🧡</span>  {year}</a>
   
     </Container>
- </div>
+ 
   );
 }
 

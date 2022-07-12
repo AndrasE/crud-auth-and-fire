@@ -226,8 +226,6 @@ login-div {
   background-image:
     radial-gradient(#363b41,
       #353535);
-      transform: translateZ(0);
-      -webkit-transform: translateZ(0);
 }
 
 
