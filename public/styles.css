@@ -2,7 +2,7 @@ body,
 html {
   height: 100%;
   margin: 0;
-  padding-top: 60px;
+  padding-top: 70px;
   padding-left: 3%;
   padding-right: 3%;
   scroll-padding-top: 75px;
@@ -211,6 +211,7 @@ login-div {
 .footer-container {
   position: fixed;
   text-align: center;
+  z-index:1;
   left: 0;
   bottom: 0;
   right: 0;
@@ -225,6 +226,7 @@ login-div {
   background-image:
     radial-gradient(#363b41,
       #353535);
+
 }
 
 
@@ -240,6 +242,7 @@ body {
   body {
     padding-left: 0%;
     padding-right: 0%;
+    padding-top: 40px;
   }
 
   .form-div {
