@@ -62,7 +62,7 @@ const Login = () => {
   return (
     <div style={{ paddingBottom: "20px" }}>
 
-      <Header />
+      <Header onClick={footerOpen}/>
 
       {/* login option buttons */}
       {/* about page state conditional render */}
@@ -98,7 +98,6 @@ const Login = () => {
                 </Col>
 
                 <Col>
-
                   <Button onClick={handleDisplay} variant="outline-secondary" >
                     <div className="svg-sizing ">
                       <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="angle-double-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -111,7 +110,6 @@ const Login = () => {
                     </div>
                     phone
                   </Button>{' '}
-
                 </Col>
 
                 <Col>

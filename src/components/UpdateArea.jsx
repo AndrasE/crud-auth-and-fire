@@ -5,8 +5,8 @@ import { Row, Col, Form, Button } from "react-bootstrap";
 function UpdateArea(props) {
 
   const [note, setNote] = useState({
-    title: "",
-    content: ""
+    title: props.oldTitle,
+    content: props.oldContent
   });
 
   const [validated, setValidated] = useState(false);
@@ -63,7 +63,7 @@ function UpdateArea(props) {
                 required
                 type="text"
                 id="inlineFormInputName"
-                placeholder={props.oldTitle} 
+                placeholder="title"
                 name="title"
                 value={note.title}
                 onChange={handleChange}
@@ -84,7 +84,7 @@ function UpdateArea(props) {
                 required
                 as="textarea"
                 id="inlineFormInputName"
-                placeholder={props.oldContent}
+                placeholder="content"
                 name="content"
                 value={note.content}
                 onChange={handleChange}

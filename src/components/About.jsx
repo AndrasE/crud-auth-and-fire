@@ -208,9 +208,11 @@ const About = () => {
                      Although it's React App and we stay on the same page, I think the project would benefit from management of 
                      the user sessions. I mean here, if you log in and refresh the page you immediately get logged out. It`s not 
                      a biggie as you don't need to redirect to interact with the App, but it would be a nice touch. I also do 
-                     think the next big step for this App would be if the users could only update and or delete their own notes. 
+                     think the next big step for this App would be if the users could only update and or delete their own notes.
+                     The drop-down menu could contain such options as My profile, My notes, Theme-switcher and so on. At this 
+                     point it`s only serve as demonstration what details caputed upon the user logged in. 
                      But the main purpose of this App was to be a simple CRUD App and I ended up way further than I 
-                     anticipated/intended. There is always more that could be done and it`s really hard for me to stop once I`m 
+                     anticipated or intended. There is always more that could be done and it`s really hard for me to stop once I`m 
                      in the zone. Let`s do this, but it would be nice if..  </p>
                      <p> And <a href="https://www.dropbox.com/s/ub0h8s53yms7wsh/comp-tree.png?dl=0">that is</a> where we are now! It`s CRUD, but Auth too 
                      with quite a few extra twists. I think this is the right time to stop and move on to the next one. Dear App,

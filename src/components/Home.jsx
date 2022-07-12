@@ -129,7 +129,7 @@ const Home = () => {
    
     <div style={{ paddingBottom: "20px" }}>
 
-      <Header />
+      <Header onClick={footerOpen}/>
 
     
       { footerClick === false ?

@@ -10,7 +10,6 @@ function Otp(props) {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [otp, setOtp] = useState("")
   const [expandOtpForm, setExpandOtpForm] = useState(false)
-  const [validated, setValidated] = useState(false);
   
 
   function handlePhoneNumberChange(event) {
@@ -31,16 +30,14 @@ function Otp(props) {
     }
   }
   
-  
-
 
   return (
     <div className="form-div" >
       <Form noValidate validated={validated} >
+
         <Row >
           <Col >
             <h3>Plese enter your phone number!</h3>
-
             <Form.Group>
               <Form.Label hidden>OtpForm</Form.Label>
               <InputGroup.Text id="inputGroupPrepend">{countryCode}</InputGroup.Text>

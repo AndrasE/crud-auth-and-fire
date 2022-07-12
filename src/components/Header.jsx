@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 import { useUserAuth } from "../context/UserAuthContext";
 
 
-const Header = () => {
+function Header(props) {
 
 
   const { user, logOut } = useUserAuth();
@@ -19,12 +19,18 @@ const Header = () => {
     }
   };
 
+  function handleClick(e) {
+    e.preventDefault();
+    props.onClick();
+  }
+  
+
   return (
     <div>
       <>
         <Navbar fixed="top" bg="dark" variant="dark" >
           <Nav className="container-fluid">
-            <Navbar.Brand>
+            <Navbar.Brand href="/#" onClick={handleClick}>
               <img
                 alt=""
                 src="../../logo.png"

@@ -14,7 +14,7 @@ const year = new Date().getFullYear();
   return (
     
     <Container className="footer-container">
-      <a href="/#" onClick={handleClick}>Andras <span role="img" aria-label="heart">🧡</span>  {year}</a>
+      <a style={{textDecoration: "none"}} href="/#" onClick={handleClick}>Andras <span role="img" aria-label="heart">🧡</span>  {year}</a>
     </Container>
  
   );
