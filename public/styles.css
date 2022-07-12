@@ -209,9 +209,13 @@ login-div {
 }
 
 .footer-container {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
   position: fixed;
   text-align: center;
   z-index:1;
+  max-height: 28px; 
+  min-height: 28px;
   left: 0;
   bottom: 0;
   right: 0;
