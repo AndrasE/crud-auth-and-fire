@@ -2,16 +2,19 @@ import React from "react";
 import { Container } from "react-bootstrap";
 
 
-
 function Footer(props) {
 
+function handleClick(e) {
+  e.preventDefault();
+  props.onClick();
+}
 
+const year = new Date().getFullYear();
 
-  const year = new Date().getFullYear();
   return (
     
     <Container className="footer-container">
-      <h6>Andras <span role="img" aria-label="heart">🧡</span>  {year}</h6>
+      <a style={{textDecoration: "none"}} href="/#" onClick={handleClick}>Andras <span role="img" aria-label="heart">🧡</span>  {year}</a>
     </Container>
  
   );

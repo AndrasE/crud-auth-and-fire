@@ -211,7 +211,6 @@ login-div {
 .footer-container {
   position: fixed;
   text-align: center;
-  z-index: 1000;
   left: 0;
   bottom: 0;
   right: 0;
@@ -226,8 +225,6 @@ login-div {
   background-image:
     radial-gradient(#363b41,
       #353535);
-      overflow-y: auto;
-     -webkit-overflow-scrolling: touch;
 }
 
 

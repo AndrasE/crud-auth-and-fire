@@ -114,7 +114,7 @@ const Home = () => {
     console.log("Note update cancelled! ID:", id);
     setButtonPopup(false);
         if (window.innerWidth < 1220) {
-        window.scrollTo(0, 320)
+         window.scrollTo(0, 0)
   }
 }
 
