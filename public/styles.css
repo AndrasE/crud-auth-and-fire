@@ -210,6 +210,7 @@ login-div {
 
 .footer-container {
   position: fixed;
+  height: auto !important;
   text-align: center;
   z-index:1;
   left: 0;
@@ -217,7 +218,6 @@ login-div {
   right: 0;
   padding-top: 3px;
   padding-bottom: 1px;
-  height: "100%";
   max-width: 400px !important;
   min-width:200px !important;
   border-width: thin;
