@@ -226,11 +226,8 @@ login-div {
   background-image:
     radial-gradient(#363b41,
       #353535);
-  transform: translate3d(0px, 0px, 0px);   
-  -o-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
 }
 
 
