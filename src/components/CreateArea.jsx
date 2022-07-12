@@ -45,7 +45,6 @@ function CreateArea(props) {
         <Row >
           <Col >
             <h3>Create note</h3>
-
             <FormGroup>
               <Form.Label hidden>Title</Form.Label>
               <Form.Control
