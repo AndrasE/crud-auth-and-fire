@@ -30,9 +30,7 @@ const Home = () => {
   const [buttonPopup, setButtonPopup] = useState(false);
   //state for the clicked note passed to updateArea popUp
   const [note, setNote] = useState({});
-  //state for readering about page instead of home - login
-  const [footerClick, setFooterClick] = useState(false);
-
+ 
   //less typing later, creating ref to firebase collection
   const usersCollectionRef = collection(db, "notes");
 
@@ -171,7 +169,7 @@ const Home = () => {
       }
       
      
-      <Footer onClick={footerOpen}/>
+      <Footer/>
 
     </div>
   );
