@@ -2,9 +2,11 @@ body,
 html {
   height: 100%;
   margin: 0;
-  padding-top: 50px;
+  padding-top: 70px;
   padding-left: 3%;
   padding-right: 3%;
+  scroll-padding-top: 75px;
+  scroll-behavior:smooth;
 }
 
 body::-webkit-scrollbar {
@@ -41,8 +43,8 @@ body::-webkit-scrollbar-thumb {
 
 .dropdown-menu {
   padding-left: 10px !important;
-  margin-top: 11px !important;
-  margin-left: 26px !important;
+  padding-right: 10px !important;
+  margin-top: 11px !important;  
   background-color:#212529f4 !important;
  }
  
@@ -55,12 +57,17 @@ body::-webkit-scrollbar-thumb {
   color: #fff !important;
  }
 
+ .dropdown-details {
+  text-align: center !important;
+ }
+
 a,
 h3,
 h4,
 h5,
 h6,
-p {
+p, 
+strong{
   color: #fff !important;
 }
 
@@ -99,7 +106,7 @@ login-div {
 
 .form-div {
   margin: auto;
-  width: 450px !important;
+  max-width: 450px !important; 
   background: #212529f3;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
@@ -125,7 +132,7 @@ login-div {
 
 .about-div {
   margin: auto;
-  width: 570px;
+  width: 60%;
   background: #212529f3;
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
@@ -137,6 +144,43 @@ login-div {
   font-size: 1rem;
   line-height: 1.5rem;
   text-align: justify;
+}
+
+.about-div a{
+  font-weight: 500;
+}
+
+.cat {
+  width: 150px;
+  display:block;
+  margin:auto; 
+  border-radius: 8px;
+}
+
+.demo {
+  display:block;
+  margin:auto; 
+  width: 98%;  
+  border-radius: 7px;
+}
+
+.read{
+  display:block;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ref{
+  text-align: center;
+}
+.ref a {
+  text-decoration: none;
+}
+
+.ref hr {
+  width: 30%;
+  margin: auto;
 }
 
 .otp-div {
@@ -185,10 +229,18 @@ login-div {
 
 
 /* media queries */
+@media only screen and (min-width: 1600px) {
+body {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+}
+
 @media only screen and (max-width: 600px) {
   body {
     padding-left: 0%;
     padding-right: 0%;
+    padding-top: 35px;
   }
 
   .form-div {
