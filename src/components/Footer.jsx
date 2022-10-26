@@ -9,7 +9,7 @@ const year = new Date().getFullYear();
   return (
     
     <Container className="footer-container">
-      <a style={{textDecoration: "none"}} href="https://andrasegyed.netlify.app/">Andras <span role="img" aria-label="heart">🧡</span>  {year}</a>
+      <a style={{textDecoration: "none"}} href="https://andrasegyed.netlify.app/" target="_blank" rel="noopener noreferrer">Andras <span role="img" aria-label="heart">🧡</span>  {year}</a>
     </Container>
  
   );
