@@ -4,7 +4,7 @@ Full stack crud application using ReactJs with Firestore database & Firebase/Aut
 Hi there 👋,
 
 I think the title is self-explanatory. 
-It took me for a while to complete this project as part of my self-study.
+This project was part of my self-study.
 If you click on the logo or you will find some further details of this project, 
 including difficulties, tutorials and references.
 
