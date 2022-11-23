@@ -10,7 +10,7 @@
   Firebase/Auth options with Protected Routes
 </h3>
 
-<hr border-top="dotted 5px">
+<hr border-top="dotted">
 
 <p>
 Hi there 👋,
@@ -20,3 +20,4 @@ This project was part of my self-study. If you go to the webapp and click on the
   
 Take care, code safe! 💻
 </p>
+
