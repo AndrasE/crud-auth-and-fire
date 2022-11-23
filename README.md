@@ -21,11 +21,14 @@ Take care, code safe! 💻
 <hr>
 <h4>To run 🚀</h4>
 <p>Clone repo via bash or Github desktop
+
+</p>
   $ git clone {the url to the GitHub repo}
-</p>
 <p>Cd into the new folder
+
+</p>
  $ npm install
-</p>
 <p>Add your own .env or edit firbase-config.js
- $ npm start
 </p>
+ $ npm start
+
