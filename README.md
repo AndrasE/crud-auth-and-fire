@@ -18,6 +18,6 @@ This project was part of my self-study. If you go to the webapp and click on the
   
 Take care, code safe! 💻
 </p>
-
-<h4 align="center">To run</h4>
 <hr>
+<h4 align="center">To run</h4>
+
