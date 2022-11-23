@@ -19,5 +19,13 @@ This project was part of my self-study. If you go to the webapp and click on the
 Take care, code safe! 💻
 </p>
 <hr>
-<h4 align="center">To run</h4>
-
+<h4>To run 🚀</h4>
+<p>Clone repo via bash or Github desktop
+  $ git clone {the url to the GitHub repo}
+</p>
+<p>Cd into the new folder
+ $ npm install
+</p>
+<p>Add your own .env or edit firbase-config.js
+ $ npm start
+</p>
