@@ -11,19 +11,18 @@
 </h3>
 <hr>
 <p>
-Hi there 👋
-  
+## Hi there 👋
+ <p>
 I think the title is self-explanatory. 
 This project was part of my self-study. If you go to the webapp and click on the logo or you will find some further details of this project, including difficulties, tutorials and references; or just read the about.jsx in the repo. I hope you like it and will offer you some help with your own project. 
   
 Take care, code safe! 💻
 </p>
 <hr>
-<h4></h4>
-
-
-## To run 🚀
+<h4>To run 🚀</h4>
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+## Installation
 
 Start with cloning this repo on your local machine:
 
@@ -33,13 +32,11 @@ $ cd PROJECT
 ```
 
 To install and set up the library, run:
-
 ```sh
 $ npm install -S myLib
 ```
 
 Or if you prefer using Yarn:
-
 ```sh
 $ yarn add --dev myLib
 ```
@@ -52,13 +49,11 @@ $ npm start
 ```
 
 ### Running the tests
-
 ```sh
 $ npm test
 ```
 
 ### Building a distribution version
-
 ```sh
 $ npm run build
 ```
