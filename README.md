@@ -9,9 +9,9 @@
 <br> 
   Firebase/Auth options with Protected Routes
 </h3>
-
-<hr width="100px" margin="auto !important">
-
+<p align="center"></p>
+<hr width="100px">
+</p>
 <p>
 Hi there 👋,
   
