@@ -43,6 +43,7 @@ $ yarn add --dev myLib
 Add your own credentials:
 ```sh
 edit firebase-config.js or add own .env
+setup own google and facebook Apis
 ```
 Serving the app:
 ```sh
