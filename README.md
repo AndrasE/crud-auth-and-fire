@@ -28,7 +28,7 @@ Start with cloning this repo on your local machine via cli or github-desktop:
 
 ```sh
 $ git clone https://github.com/AndrasE/crud-auth-and-fire
-$ cd PROJECT
+$ cd PROJECTNAME
 ```
 
 To install and set up the library, run:
