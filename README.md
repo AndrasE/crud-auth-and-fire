@@ -1,5 +1,5 @@
-<p href="https://crud-auth.netlify.app/" align="center">
-  <img src="https://github.com/AndrasE/crud-auth-and-fire/blob/main/public/logo-readme.png?raw=true">
+<p align="center">
+  <img href="https://crud-auth.netlify.app/" src="https://github.com/AndrasE/crud-auth-and-fire/blob/main/public/logo-readme.png?raw=true">
 </p>
 
 <h2 align="center">
