@@ -9,7 +9,7 @@
 <br> 
   Firebase/Auth options with Protected Routes
 </h3>
-<hr>
+<br>
 
 ## Hi there 👋
 
@@ -17,9 +17,10 @@ I think the title is self-explanatory.
 This project was part of my self-study. If you go to the webapp and click on the logo or you will find some further details of this project, including difficulties, tutorials and references; or just read the about.jsx in the repo. I hope you like it and will offer you some help with your own project. 
   
 Take care, code safe! 💻
-</p>
-<hr>
-<h4>To run 🚀</h4>
+
+<br>
+
+## To run 🚀
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ## Installation
