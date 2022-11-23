@@ -30,7 +30,6 @@ Start with cloning this repo on your local machine via cli or github-desktop:
 $ git clone https://github.com/AndrasE/crud-auth-and-fire
 $ cd PROJECTNAME
 ```
-
 To install and set up the library, run:
 ```sh
 $ npm install -S myLib
@@ -43,14 +42,12 @@ $ yarn add --dev myLib
 
 Add your own credentials:
 ```sh
-edit firebase-config or add own .env
+edit firebase-config.js or add own .env
 ```
-
 Serving the app:
 ```sh
 $ npm start
 ```
-
 Running the tests:
 ```sh
 $ npm test
