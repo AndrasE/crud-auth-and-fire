@@ -1,11 +1,11 @@
 
-  <a href="https://crud-auth.netlify.app/">
-    ![alt text](https://github.com/AndrasE/crud-auth-and-fire/blob/main/public/logo-readme.png?raw=true)
-  </a>
+![alt text](https://github.com/AndrasE/crud-auth-and-fire/blob/main/public/logo-readme.png?raw=true)
 
 
-
+<p align="center">
 Full stack crud application using ReactJs with Firestore database & Firebase/Auth options with Protected Routes
+</p>
+
 
 Hi there 👋,
 
