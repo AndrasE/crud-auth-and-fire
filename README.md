@@ -1,4 +1,5 @@
-# crud-auth-and-fire
+![alt text](https://github.com/AndrasE/crud-auth-and-fire/blob/main/public/logo-readme.png?raw=true)
+
 Full stack crud application using ReactJs with Firestore database & Firebase/Auth options with Protected Routes
 
 Hi there 👋,
