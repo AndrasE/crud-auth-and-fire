@@ -25,7 +25,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Installation
 
-Start with cloning this repo on your local machine:
+Start with cloning this repo on your local machine via cli or github-desktop:
 
 ```sh
 $ git clone https://github.com/AndrasE/crud-auth-and-fire
@@ -42,7 +42,6 @@ Or if you prefer using Yarn:
 $ yarn add --dev myLib
 ```
 
-## Usage
 
 ### Serving the app
 ```sh
