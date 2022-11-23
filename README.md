@@ -1,6 +1,6 @@
 
 ![alt text](https://github.com/AndrasE/crud-auth-and-fire/blob/main/public/logo-readme.png?raw=true)
-<h2 align="center" max-width: 300px>
+<h2 align="center" max-width: "500px" margin="auto">
 Full stack crud application using ReactJs with Firestore database & Firebase/Auth options with Protected Routes
 </h2>
 
