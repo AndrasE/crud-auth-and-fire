@@ -2,7 +2,7 @@
 ![alt text](https://github.com/AndrasE/crud-auth-and-fire/blob/main/public/logo-readme.png?raw=true)
 
 <p align="center">
-  <img src="https://www.python.org/python-.png](https://github.com/AndrasE/crud-auth-and-fire/blob/main/public/logo-readme.png">
+  <img src="https://github.com/AndrasE/crud-auth-and-fire/blob/main/public/logo-readme.png?raw=true">
 </p>
 
 <h2 align="center">
