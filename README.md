@@ -1,10 +1,8 @@
 
 ![alt text](https://github.com/AndrasE/crud-auth-and-fire/blob/main/public/logo-readme.png?raw=true)
-
-
-<p align="center">
+<h2 align="center">
 Full stack crud application using ReactJs with Firestore database & Firebase/Auth options with Protected Routes
-</p>
+</h2>
 
 
 Hi there 👋,
