@@ -6,6 +6,7 @@
 
 <h3 align="center">
   Full stack crud application using ReactJs with Firestore database & 
+  <br>
   Firebase/Auth options with Protected Routes
 </h3>
 
