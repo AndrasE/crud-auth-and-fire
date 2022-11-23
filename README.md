@@ -1,5 +1,10 @@
 
 ![alt text](https://github.com/AndrasE/crud-auth-and-fire/blob/main/public/logo-readme.png?raw=true)
+
+<p align="center">
+  <img width="600" height="200" src="https://www.python.org/python-.png">
+</p>
+
 <h2 align="center">
 Full stack crud application using ReactJs with Firestore database & 
   <br> Firebase/Auth options with Protected Routes
