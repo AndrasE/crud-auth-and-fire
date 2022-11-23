@@ -43,7 +43,7 @@ $ yarn add --dev myLib
 
 Add your own credentials:
 ```sh
-$ edit firebase-config or add own .env
+edit firebase-config or add own .env
 ```
 
 Serving the app:
