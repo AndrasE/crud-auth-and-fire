@@ -9,7 +9,7 @@
 <br> 
   Firebase/Auth options with Protected Routes
 </h3>
-
+<hr>
 <p>
 Hi there 👋,
   
