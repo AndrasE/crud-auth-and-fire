@@ -18,5 +18,5 @@ Hi there 👋,
 I think the title is self-explanatory. 
 This project was part of my self-study. If you go to the webapp and click on the logo or you will find some further details of this project, including difficulties, tutorials and references; or just read the about.jsx in the repo. I hope you like it and will offer you some help with your own project. 
   
-Take care, code safe! 💻
+Take care, code safe! 👨‍💻
 </p>
