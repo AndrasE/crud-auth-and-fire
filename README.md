@@ -41,18 +41,21 @@ Or if you prefer using Yarn:
 $ yarn add --dev myLib
 ```
 
+Add your own credentials:
+```sh
+$ edit firebase-config or add own .env
+```
 
-### Serving the app
+Serving the app:
 ```sh
 $ npm start
 ```
 
-### Running the tests
+Running the tests:
 ```sh
 $ npm test
 ```
-
-### Building a distribution version
+Building a distribution version:
 ```sh
 $ npm run build
 ```
