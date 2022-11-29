@@ -1,9 +1,9 @@
+<br>
 <p align="center">
   <a href="https://crud-auth.netlify.app/" target="_blank" rel="noopener noreferrer">
   <img src="https://github.com/AndrasE/raw-readme/blob/main/crud-readme-img.png?raw=true">
   </a>
 </p>
-
 <h3 align="center">
   Full stack crud application using ReactJs with Firestore database & 
   <br>
