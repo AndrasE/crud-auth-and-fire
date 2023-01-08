@@ -15,7 +15,7 @@
 ## Hi there 👋
 
 I think the title is self-explanatory. 
-This project was part of my self-study. If you go to the webapp and click on the logo you will find further details of this project, including difficulties, tutorials and references; or just read the About.jsx in the repo. I hope you like it and it will offer you some help with your own project. 
+This project was part of my self-study. If you go to the webapp and click on the logo you will find further details of this project, including challenges and particular solutions, tutorials and references; or just read the About.jsx in the repo. I hope you like it and it will offer you some help with your own project. 
   
 Take care, code safe! 💻
 
