@@ -1,7 +1,7 @@
 <br>
 <p align="center">
   <a href="https://crud-auth.netlify.app/" target="_blank" rel="noopener noreferrer">
-  <img src="https://github.com/AndrasE/raw-readme/blob/main/crud-readme-img.png?raw=true" width="200">
+  <img src="https://github.com/AndrasE/raw-readme/blob/main/crud-readme-img.png?raw=true" width="150">
   </a>
 </p>
 <h3 align="center">
