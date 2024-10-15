@@ -20,7 +20,16 @@
 <li>Authentication - Implements user authentication using Firebase, allowing users to sign in via Google, Facebook, or by phone using one-time password texts.</li> 
 <li> Protected Routes - Restricts access to certain routes based on user authentication, preventing unauthorized access to sensitive data. </li> 
 <li>Context Provider - Utilizes a context provider to manage user authentication state, ensuring consistent access across the application.</li>
+</p>
 
+<p> Packadges used: 
+<li>firebase - Provides Firebase services like authentication, database, and cloud storage for integrating backend functionality.</li>
+<li>react-bootstrap - A popular UI framework for React that offers pre-built, responsive components based on Bootstrap.</li>
+<li>react-gist - Allows to embed GitHub Gists (code snippets) directly into React components.</li>
+<li>react-phone-number-input - A customizable input field for handling phone numbers with validation and international number formatting support.</li>
+<li>react-router & react-router-dom: Manages routing in React apps, enabling navigation between different views or pages.</li>
+</p>
+  
 ## Run 🚀
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
