@@ -15,12 +15,16 @@
 ## Hello there 👋
 
 <p>This project demonstrates a simple CRUD (Create, Read, Update, Delete) React application with a backend powered by Firebase. I chose Firebase for its ease of integration and robust features, allowing me to focus on the core functionality while leveraging its capabilities. <br /> After carefully planning the project's requirements, I implemented the CRUD functionality using React components and Firebase's Realtime Database. I then integrated Firebase authentication (Google, Facebook, OTP) to secure the application and added protected routes to restrict access to unauthorized users. The app is designed with React Bootstrap to ensure a responsive and user-friendly interface. <br /> For a more in-depth breakdown of the project's evolution and features, and practical examples, please visit the app and click on the logo. You will find both an About and About More section.</p>
-<br/>
+
+<br>
+
 <p> Key Features: 
 <li>Authentication - Implements user authentication using Firebase, allowing users to sign in via Google, Facebook, or by phone using one-time password texts.</li> 
 <li> Protected Routes - Restricts access to certain routes based on user authentication, preventing unauthorized access to sensitive data. </li> 
 <li>Context Provider - Utilizes a context provider to manage user authentication state, ensuring consistent access across the application.</li>
 </p>
+
+<br>
 
 <p> Packadges used: 
 <li>firebase - Provides Firebase services like authentication, database, and cloud storage for integrating backend functionality.</li>
