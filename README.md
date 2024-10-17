@@ -5,7 +5,7 @@
   <br>
   React crud application with Firestore database &
   <br>
- Protected Routes
+ & Firebase/OAuth options with Protected Routes
 </h3>
 
 ## Hello there 👋
