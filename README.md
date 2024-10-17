@@ -3,7 +3,7 @@
   <img src="https://github.com/AndrasE/raw-readme/blob/main/crud-readme-img.png?raw=true" width="150">
   </a>
   <br>
-  React crud application with Firestore database &
+  React crud application with Firestore database
   <br>
  & Firebase/OAuth options with Protected Routes
 </h3>
