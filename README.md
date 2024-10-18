@@ -22,7 +22,7 @@ For a more in-depth breakdown of the project's evolution and features, and pract
 - **Protected Routes** - Restricts access to certain routes based on user authentication, preventing unauthorized access to sensitive data.
 - **Context Provider** - Utilizes a context provider to manage user authentication state, ensuring consistent access across the application.
 
-### Packadges
+### Packadges used
 
 - **[firebase](https://www.npmjs.com/package/react-firebase)** - Provides Firebase services like authentication, database, and cloud storage for integrating backend functionality.
 - **[react-bootstrap](https://react-bootstrap.netlify.app/)** - A popular UI framework for React that offers pre-built, responsive components based on Bootstrap.
