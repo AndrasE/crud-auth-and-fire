@@ -17,7 +17,9 @@ After carefully planning the project's requirements, I implemented the CRUD func
 For a more in-depth breakdown of the project's evolution and features, and practical examples, please visit the app and click on the logo. You will find both an About and About More section.
 
 <div align="center">
-<img src="https://github.com/AndrasE/raw-readme/blob/3f12481a9b01c5f8168b43dddb24da6dbcdfdfde/crud.webp" width="420">
+<img src="https://github.com/AndrasE/raw-readme/blob/91c885d64a6cfd8a82f56dccd0ab2e57ebefe4fb/thumbs/crud_1.png" width="220">
+<img src="https://github.com/AndrasE/raw-readme/blob/91c885d64a6cfd8a82f56dccd0ab2e57ebefe4fb/thumbs/crud_2.png" width="220">
+<img src="https://github.com/AndrasE/raw-readme/blob/91c885d64a6cfd8a82f56dccd0ab2e57ebefe4fb/thumbs/crud_3.png" width="220">
 </div>
 
 ### Key Features
