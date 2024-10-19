@@ -1,6 +1,6 @@
 <h3 align="center">
   <a href="https://crud-auth.netlify.app/" target="_blank" rel="noopener noreferrer">
-  <img src="https://github.com/AndrasE/raw-readme/blob/main/crud-readme-img.png?raw=true" width="150">
+  <img src="https://github.com/AndrasE/raw-readme/blob/e0ba0d38fc6f2bb201983bbc4986e59f1ae946f2/logo/crud-readme-img.png" width="150">
   </a>
   <br>
   React crud application with Firestore database
